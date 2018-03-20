@@ -7,6 +7,12 @@
 Yellowbrick: Machine Learning Visualization
 ===========================================
 
+Yellowbrick`e hoşgeldiniz.
+
+Şuanda Yellowbrick Türkçe dökümantasyonu üzerinde çalışmaktayız. Lütfen sayfamıza tekrar uğrayın. 
+
+Ayrıca yardım tekliflerinize açığız. Türkçe tercüme için katkıda bulunmak isterseniz `yellowbrick-docs-tr <https://github.com/DistrictDataLabs/yellowbrick-docs-tr>`_ adresine pull request sorgusu gönderebilirsiniz. Eğer Yellowbrick için katkıda bulunmak isterseniz codebase `<https://github.com/DistrictDataLabs/yellowbrick>`_ `e pull request sorgusu gönderebilirsiniz. 
+
 .. image:: images/visualizers.png
 
 Yellowbrick is a suite of visual diagnostic tools called "Visualizers" that extend the Scikit-Learn API to allow human steering of the model selection process. In a nutshell, Yellowbrick combines Scikit-Learn with Matplotlib in the best tradition of the Scikit-Learn documentation, but to produce visualizations for *your* models! For more on Yellowbrick, please see the :doc:`about`.
