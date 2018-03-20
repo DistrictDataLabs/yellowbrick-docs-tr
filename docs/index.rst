@@ -11,7 +11,7 @@ Yellowbrick`e hoşgeldiniz.
 
 Şuanda Yellowbrick Türkçe dökümantasyonu üzerinde çalışmaktayız. Lütfen sayfamıza tekrar uğrayın. 
 
-Ayrıca yardım tekliflerinize açığız. Türkçe tercüme için katkıda bulunmak isterseniz `yellowbrick-docs-tr <https://github.com/DistrictDataLabs/yellowbrick-docs-tr>`_ adresine pull request sorgusu gönderebilirsiniz. Eğer Yellowbrick için katkıda bulunmak isterseniz `codebase <https://github.com/DistrictDataLabs/yellowbrick>`_ `e pull request sorgusu gönderebilirsiniz. 
+Ayrıca yardım tekliflerinize açığız. Türkçe tercüme için katkıda bulunmak isterseniz `yellowbrick-docs-tr <https://github.com/DistrictDataLabs/yellowbrick-docs-tr>`_ adresine pull request sorgusu gönderebilirsiniz. Eğer Yellowbrick için katkıda bulunmak isterseniz `codebase <https://github.com/DistrictDataLabs/yellowbrick>`_ adresine pull request sorgusu gönderebilirsiniz. 
 
 .. image:: images/visualizers.png
 
