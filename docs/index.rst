@@ -15,73 +15,73 @@ Ayrıca yardım tekliflerinize açığız. Türkçe tercüme için katkıda bulu
 
 .. image:: images/visualizers.png
 
-Yellowbrick, insanların model seçim sürecini yönlendirmeye izin veren "Görselleştirici" adı verilen Scikit-Learn API`sini genişleten görsel tanı araçları paketidir. Kısacası, Yellowbrick, Scikit-Learn`i Matplotlib ile Scikit-Learn dokümantasyonuna gore birleştirirek modelinize göre görselleştirme üretmektedir. Yellowbrick ile ilgili daha fazlası için, lütfen bakınız :doc:`about`.
+Yellowbrick, insanların model seçim sürecini yönlendirmeye izin veren "Görselleştirici" adı verilen Scikit-Learn API`sini genişleten görsel tanı araçları paketidir. Kısacası Yellowbrick, Scikit-Learn`i Matplotlib ile Scikit-Learn dökümantasyonuna gore birleştirirek modelinize göre görselleştirme üretmektedir. Yellowbrick ile ilgili daha fazlası için, lütfen bakınız: :doc:`about`.
 
-Eğer Yellowbrick`te yeniyseniz, :doc:`quickstart` ya da bu kısmı geçerek :doc:`tutorial` kısmını ziyaret edebilirsiniz. Yellowbrick, düzenli olarak eklenen birçok görselleştiricisi ile zengin bir kütüphanedir. Spesifik Görselleştiriciler ve genişletilmiş kullanımları ile ilgili detayları  :doc:`api/index` kısmından bulabilirsiniz. Yellowbrick`e katkıda bulunmak ister misiniz? :ref:`contributing guide <contributing>` a göz atin. Şayet kullanıcı testi için başvurduysanız, şu adrese gidiniz :doc:`evaluation` (ve Teşekkür ederiz).
+Eğer Yellowbrick`te yeniyseniz, :doc:'quickstart' :doc:`quickstart` ya da bu kısmı geçerek :doc:`tutorial` kısmını ziyaret edebilirsiniz. Yellowbrick, düzenli olarak eklenen birçok görselleştiricisi ile zengin bir kütüphanedir. Spesifik Görselleştiriciler ve genişletilmiş kullanımları ile ilgili detayları  :doc:`api/index` kısmından bulabilirsiniz. Yellowbrick`e katkıda bulunmak ister misiniz? :ref:`contributing guide <contributing>` sayfasına göz atabilirsiniz. Şayet kullanıcı testi için başvurduysanız, :doc:`evaluation` sayfasına bakınız.(ve Teşekkür ederiz)
 
 Görselleştiriciler
 -----------
 
-Görselleştiriciler, oncelikli amacı model secim islemine icgoru saglamaya izin veren gorsellestirmeleri olusturan tahmin ediciler (veriden ogrenilen nesneler)dir. Scikit-Learn`e gore, Gorsellestiriciler; veri alanini gorsellestirirken, donusturuculere benzeyebilir ya da "ModelCV" (e.g. `RidgeCV <http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html>`_, `LassoCV <http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html>`_) methodlarin calismasinda oldugu gibi, bir model tahmin edicisini sarabilmektedir. Yellowbrick`in oncelikli amaci, Scikit Learn benzeri bir mantiksal API olusturmaktir. En popular gorsellestiricilerimizden bazilari sunlardir:
+Görselleştiriciler, öncelikli amacı model seçim işlemine içgörü sağlamaya izin veren görselleştirmeleri oluşturan tahmin edicilerdir(veriden öğrenilen nesneler). Scikit-Learn`e göre, Görselleştiriciler; veri alanını görselleştirirken, dönüstürücülere benzeyebilir ya da "ModelCV" (e.g. `RidgeCV <http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RidgeCV.html>`_, `LassoCV <http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html>`_) metodların calışmasında olduğu gibi, bir model tahmin edicisini sarabilmektedir. Yellowbrick`in öncelikli amacı, Scikit-Learn benzeri bir mantıksal API oluşturmaktır. En populer görselleştiricilerimizden bazıları şunlardır:
 
 Özellik Görselleştirme
 ~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`api/features/rankd`: pairwise ranking of features to detect relationships
-- :doc:`api/features/pcoords`: horizontal visualization of instances
-- :doc:`Radial Visualization <api/features/radviz>`: separation of instances around a circular plot
-- :doc:`api/features/pca`: projection of instances based on principal components
-- :doc:`api/features/importances`: rank features by importance or linear coeficients for a specific model
-- :doc:`Scatter and Joint Plots<api/features/scatter>`: direct data visualization with feature selection
+- :doc:`api/features/rankd`: ilişki saptaması için özelliklerin ikili olarak sıralanması
+- :doc:`api/features/pcoords`: özelliklerin yatay görselleştirilmesi
+- :doc:`Radial Visualization <api/features/radviz>`: örneklerin bir dairesel alanda ayrılması
+- :doc:`api/features/pca`: ana bileşenlere göre örneklerin gösterimi
+- :doc:`api/features/importances`: spesifik bir model için önem veya doğrusal katsayısına göre özellik sıralaması
+- :doc:`Scatter and Joint Plots<api/features/scatter>`: özellik seçimi ile doğrudan veri görselleştirimi
 
 Klasifikasyon Görselleştirme
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`api/classifier/class_balance`: see how the distribution of classes affects the model
-- :doc:`api/classifier/classification_report`: visual representation of precision, recall, and F1
-- :doc:`ROC/AUC Curves <api/classifier/rocauc>`: receiver operator characteristics and area under the curve
-- :doc:`Confusion Matrices <api/classifier/confusion_matrix>`: visual description of class decision making
+- :doc:`api/classifier/class_balance`: sınıfların dagılımının modeli nasıl etkilediğinin gösterimi
+- :doc:`api/classifier/classification_report`: precision, recall, ve F1 görsel temsili
+- :doc:`ROC/AUC Curves <api/classifier/rocauc>`: işlem karakteristik eğrisi ve eğri altında kalan alan
+- :doc:`Confusion Matrices <api/classifier/confusion_matrix>`: sınıf karar veriminin görsel açıklaması
 
 Regresyon Görselleştirme
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`api/regressor/peplot`: find model breakdowns along the domain of the target
-- :doc:`api/regressor/residuals`: show the difference in residuals of training and test data
-- :doc:`api/regressor/alphas`: show how the choice of alpha influences regularization
+- :doc:`api/regressor/peplot`: hedef alanı boyunca oluşan model hatalarının bulunması
+- :doc:`api/regressor/residuals`: eğitim ve test verisi rezidüellerindeki farkın gösterimi
+- :doc:`api/regressor/alphas`: alfa değer seçiminin regülasyonu nasıl etkilediğinin gösterimi
 
 Kümesel Görselleştirme
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-- :doc:`K-Elbow Plot <api/cluster/elbow>`: select k using the elbow method and various metrics
-- :doc:`Silhouette Plot <api/cluster/silhouette>`: select k by visualizing silhouette coefficient values
+- :doc:`K-Elbow Plot <api/cluster/elbow>`: elbow metodu ve çeşitli metriklerin kullanımı ile k seçimi
+- :doc:`Silhouette Plot <api/cluster/silhouette>`: siluet katsayısı değerlerinin görselleştirimi ile k seçimi
 
 Metin Görselleştirmesi
 ~~~~~~~~~~~~~~~~~~
 
-- :doc:`Term Frequency <api/text/freqdist>`: visualize the frequency distribution of terms in the corpus
-- :doc:`api/text/tsne`: use stochastic neighbor embedding to project documents.
+- :doc:`Term Frequency <api/text/freqdist>`: metin gövdesi içinde bulunan terimlerin dağılım sıklığının görselleştirimi
+- :doc:`api/text/tsne`: proje dökümanına stokastik yakınsal yerleştirimin kullanılması
 
-... and more! Visualizers are being added all the time; be sure to check the examples (or even the `develop branch <https://github.com/DistrictDataLabs/yellowbrick/tree/develop>`_) and feel free to contribute your ideas for new Visualizers!
+... ve daha fazlası! Yeni görselleştiriciler sürekli olarak eklenmekte; örnekleri kontrol ettiğinizden emin olun (ya da hatta `develop branch <https://github.com/DistrictDataLabs/yellowbrick/tree/develop>`_) ve yeni görselleştiricilerle ilgili fikirlerinizle katkıda bulunmaktan lütfen çekinmeyin.
 
-Yardım Almak İçin
+Yardım İçin
 ------------
 
-Yellowbrick is a welcoming, inclusive project in the tradition of Matplotlib and Scikit-Learn. Similar to those projects, we try to follow the `Python Software Foundation Code of Conduct <http://www.python.org/psf/codeofconduct/>`_. Please don't hesitate to reach out to us for help or if you have any contributions or bugs to report!
+Yellowbrick, Matplotlib ve Scikit-Learn geleneğinde olduğu gibi kapsamlı ve herkesi davet eden bir projedir. Bu projelere benzer olarak `Python Software Foundation Code of Conduct <http://www.python.org/psf/codeofconduct/>`_ ölçütlerini takip etmeye çalışıyoruz. Lütfen yardıma ihtiyacınız olduğunda ya da herhangi bir katkıda bulunmak isterseniz veyahut bug bulursanız bizlere çekinmeden ulaşabilirsiniz.
 
-The primary way to ask for help with Yellowbrick is to post on our `Google Groups Listserv <https://groups.google.com/forum/#!forum/yellowbrick>`_. This is an email list/forum that members of the community can join and respond to each other; you should be able to receive the quickest response here. Please also consider joining the group so you can respond to questions! You can also ask questions on `Stack Overflow <http://stackoverflow.com/questions/tagged/yellowbrick>`_ and tag them with "yellowbrick". Or you can add issues on GitHub. You can also tweet or direct message us on Twitter `@DistrictDataLab <https://twitter.com/districtdatalab>`_.
+Yellowbrick yardımı için ilk yol bu isteğinizi gönderi olarak `Google Groups Listserv <https://groups.google.com/forum/#!forum/yellowbrick>`_ kısmında paylaşmanız. Topluluk üyelerinin katılım gösterebildiği ve üyelerin birbirlerine cevap verebildigi email liste/forumu olup, burada en hızlı şekilde yanıt alabilirsiniz. Lutfen gruba katılmayı düşünün, boylelikle siz de soruları cevaplayabilirsiniz. Ayrıca `Stack Overflow <http://stackoverflow.com/questions/tagged/yellowbrick>`_ da soru sorabilir ve sorularınızı "yellowbrick" olarak etiketleyebilirsiniz. Ya da Github üzerinde Isssues kısmına ekleme yapabilirsiniz. Veya Twitter hesabımıza `@DistrictDataLab <https://twitter.com/districtdatalab>`_ tweet ya da direk mesaj atabilirsiniz.
 
 Açık Kaynak
 -----------
 
-The Yellowbrick `license <https://github.com/DistrictDataLabs/yellowbrick/blob/master/LICENSE.txt>`_ is an open source `Apache 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_ license. Yellowbrick enjoys a very active developer community; please consider joining them and `contributing <https://github.com/DistrictDataLabs/yellowbrick/blob/develop/CONTRIBUTING.md>`_!
+Yellowbrick `license <https://github.com/DistrictDataLabs/yellowbrick/blob/master/LICENSE.txt>`_ açık kaynaklı bir `Apache 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_ lisansıdır. Yellowbrick çok aktif geliştirici topluluğuna sahip olup; lütfen sizde katılmayı ve `katkıda bulunmayı <https://github.com/DistrictDataLabs/yellowbrick/blob/develop/CONTRIBUTING.md>`_ düşünün!
 
-Yellowbrick is hosted on `GitHub <https://github.com/DistrictDataLabs/yellowbrick/>`_. The `issues <https://github.com/DistrictDataLabs/yellowbrick/issues/>`_ and `pull requests <https://github.com/DistrictDataLabs/yellowbrick/pulls>`_ are tracked there.
+Yellowbrick `GitHub <https://github.com/DistrictDataLabs/yellowbrick/>`_ üzerinde bulunmaktadır. `issues <https://github.com/DistrictDataLabs/yellowbrick/issues/>`_ ve `pull requests <https://github.com/DistrictDataLabs/yellowbrick/pulls>`_ detaylarını bu linklerden takip edebilirsiniz.
 
 
 İçindekiler Tablosu
 -----------------
 
-The following is a complete listing of the Yellowbrick documentation for this version of the library:
+Kütüphanenin bu versiyonu için olan Yellowbrick dokümantasyonunun tüm listesini aşağıda bulabilirsiniz:
 
 .. toctree::
    :maxdepth: 2
@@ -95,7 +95,7 @@ The following is a complete listing of the Yellowbrick documentation for this ve
    about
    changelog
 
-Indices and tables
+Dizinler ve Tablolar
 ------------------
 
 * :ref:`genindex`
