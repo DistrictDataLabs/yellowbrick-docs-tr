@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Model Selection Tutorial
+Model Seçim Eğitimi
 ========================
 
 In this tutorial, we are going to look at scores for a variety of
@@ -8,7 +8,7 @@ In this tutorial, we are going to look at scores for a variety of
 visual diagnostic tools from `Yellowbrick <http://www.scikit-yb.org>`__
 in order to select the best model for our data.
 
-The Model Selection Triple
+Model Seçim Üçlüsü
 --------------------------
 Discussions of machine learning are frequently characterized by a singular focus on model selection. Be it logistic regression, random forests, Bayesian methods, or artificial neural networks, machine learning practitioners are often quick to express their preference. The reason for this is mostly historical. Though modern third-party machine learning libraries have made the deployment of multiple models appear nearly trivial, traditionally the application and tuning of even one of these algorithms required many years of study. As a result, machine learning practitioners tended to have strong preferences for particular (and likely more familiar) models over others.
 
@@ -26,7 +26,7 @@ The Yellowbrick library is a diagnostic visualization platform for machine learn
 
 .. _SIGMOD: http://cseweb.ucsd.edu/~arunkk/vision/SIGMODRecord15.pdf
 
-About the Data
+Veri Hakkında
 --------------
 
 This tutorial uses a modified version of the mushroom dataset_ from
@@ -83,7 +83,7 @@ Let's load the data with Pandas.
     X = dataset[features]
     y = dataset[target]
 
-Feature Extraction
+Özellik Çıkarımı
 ------------------
 
 Our data, including the target, is categorical. We will need to change
@@ -136,10 +136,10 @@ have to adapt it in order to apply it to multiple columns.
 
             return output
 
-Modeling and Evaluation
+Modelleme ve Değerlendirme
 -----------------------
 
-Common metrics for evaluating classifiers
+Sınıflandırıcı Değerlendirmesi için Genel Metrikler
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Precision** is the number of correct positive results divided by the
@@ -334,13 +334,13 @@ diagnostics from the Yellowbrick library).
 
 
 
-Preliminary Model Evaluation
+İlk Model Değerlendirmesi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Based on the results from the F1 scores above, which model is performing
 the best?
 
-Visual Model Evaluation
+Görsel Model Değerlendirmesi
 -----------------------
 
 Now let's refactor our model evaluation function to use Yellowbrick's
@@ -473,7 +473,7 @@ in fact poisonous).
 .. image:: images/tutorial/modelselect_random_forest_classifier.png
 
 
-Reflection
+Değerlendirme
 ----------
 
 1. Which model seems best now? Why?
