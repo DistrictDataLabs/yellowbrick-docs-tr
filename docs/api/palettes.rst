@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Colors and Style
+Renkler ve Stil
 ================
 
 Yellowbrick believes that visual diagnostics are more effective if visualizations are appealing. As a result, we have borrowed familiar styles from `Seaborn <http://seaborn.pydata.org/tutorial/aesthetics.html>`_ and use the new `Matplotlib 2.0 styles <https://matplotlib.org/users/colormaps.html>`_. We hope that these out of the box styles will make your visualizations publication ready, though of course you can customize your own look and feel by directly modifying the visualization with matplotlib.
@@ -22,7 +22,7 @@ Palettes and sequences can be passed to visualizers as follows:
 
 Refer to the API listing of each visualizer for specifications about how each color argument is handled. In the next two sections we will show every possible color palette and sequence currently available in Yellowbrick.
 
-Color Palettes
+Renk Paletleri
 --------------
 
 Color palettes are discrete color lists that have a fixed length. The most common palettes are ordered as "blue", "green", "red", "maroon", "yellow", "cyan", and an optional "key". This allows you to specify these named colors or by the first character, e.g. 'bgrmyck' for matplotlib visualizations.
@@ -114,7 +114,7 @@ A complete listing of the Yellowbrick color palettes can be visualized as follow
 .. image:: images/palettes/palettes_2_16.png
 
 
-Color Sequences
+Renk Dizileri
 ---------------
 
 Color sequences are continuous representations of color and are usually defined as a fixed number of steps between a minimum and maximal value. Sequences must be created with a total number of bins (or length) before plotting to ensure that values are assigned correctly. In the listing below, each sequence is shown with varying lengths to describe the range of colors in detail.
@@ -961,7 +961,7 @@ Below is a complete listing of all the sequence names available in Yellowbrick:
 
 .. image:: images/palettes/palettes_3_208.png
 
-API Reference
+API Referansı
 -------------
 
 yellowbrick.style.colors module
