@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Quick Start
+Hızlı Başlangıç
 ===========
 
 If you're new to Yellowbrick, this guide will get you started and help you include visualizers in your machine learning workflow. Before we get started, however, there are several notes about development environments that you should consider.
@@ -11,7 +11,7 @@ Yellowbrick is also commonly used inside of a `Jupyter Notebook <http://jupyter.
 
 .. NOTE:: Jupyter, Pandas, and other ancillary libraries like NLTK for text visualizers are not installed with Yellowbrick and must be installed separately.
 
-Installation
+Kurulum
 ------------
 
 Yellowbrick is compatible with Python 2.7 or later, but it is preferred to use Python 3.5 or later to take full advantage of all functionality. The simplest way to install Yellowbrick is from PyPI_ with pip_, Python's preferred package installer.
@@ -41,7 +41,7 @@ If you're using Windows or Anaconda, you can take advantage of the `conda <https
 
 Once installed, you should be able to import Yellowbrick without an error, both in Python and inside of Jupyter notebooks. Note that because of matplotlib, Yellowbrick does not work inside of a virtual environment without jumping through some hoops.
 
-Using Yellowbrick
+Yellowbrick Kullanımı
 -----------------
 The Yellowbrick API is specifically designed to play nicely with Scikit-Learn. The primary interface is therefore a ``Visualizer`` -- an object that learns from data to produce a visualization. Visualizers are Scikit-Learn `Estimator <http://scikit-learn.org/stable/developers/contributing.html#apis-of-scikit-learn-objects>`_ objects and have a similar interface along with methods for drawing. In order to use visualizers, you simply use the same workflow as with a Scikit-Learn model, import the visualizer, instantiate it, call the visualizer's ``fit()`` method, then in order to render the visualization, call the visualizer's ``poof()`` method, which does the magic!
 
@@ -102,7 +102,7 @@ The class-based API is meant to integrate with Scikit-Learn directly, however on
 
 These quick functions give you slightly less control over the machine learning workflow, but quickly get you diagnostics on demand and are very useful in exploratory processes.
 
-Walkthrough
+Açıklamalar
 -----------
 
 Consider a regression analysis as a simple example of the use of visualizers in the machine learning workflow. Using a `bike sharing dataset <https://s3.amazonaws.com/ddl-data-lake/yellowbrick/bikeshare.zip>`_ based upon the one uploaded to the `UCI Machine Learning Repository <https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset>`_, we would like to predict the number of bikes rented in a given hour based on features like the season, weather, or if it's a holiday.

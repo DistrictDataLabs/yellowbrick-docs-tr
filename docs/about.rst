@@ -3,7 +3,7 @@ Hakkında
 
 .. image:: images/yellowbrickroad.jpg
 
-Image by QuatroCinco_, used with permission, Flickr Creative Commons.
+Resim sahibi QuatroCinco_, izniyle kullanılmıştır, Flickr Creative Commons.
 
 Yellowbrick, görsel analiz ve tanımlama araçları ile birlikte Scikit-Learn API_ `yi genişleten açık kaynak kodlu sade bir Python Projesidir. Yellowbrick API, Matplotlib`i  de kapsayarak yayınlamaya hazır figür ve interaktif veri keşfi oluşturmayı sağlarken bir yandan da geliştiricilere ayrıntılı figür kontrolu imkanı sağlamaktadır. Yellowbrick kullanıcılar için; Makine öğrenimi modellerinin performansını geliştirme, güvenirliliğini sağlama, değer tahmininde bulunma ve makine oğrenmesi iş akışında karşılaşılan problemleri teşhis etmede yardımcı olabilmektedir.
 
@@ -29,7 +29,7 @@ The Yellowbrick library is a diagnostic visualization platform for machine learn
 
 İsim Kökeni
 -----------
-The Yellowbrick package gets its name from the fictional element in the 1900 children's novel **The Wonderful Wizard of Oz** by American author L. Frank Baum. In the book, the yellow brick road is the path that the protagonist, Dorothy Gale, must travel in order to reach her destination in the Emerald City.
+Yellowbrick Paketi, Amerikan yazar L. Frank Baum tarafından 1900 yılında yazılan çocuk romanı **The Wonderful Wizard of Oz** (Oz Büyücüsü) içerisinde geçen kurgusal bir elementten adını almışstır. Kitapta, Roman kahramanı Dorothy Gale, Emerald Şehrindeki hedefine ulaşabilmesi için sarı tuğlalı yolu (yellowbrick) takip etmesi gerekmektedir.
 
 From Wikipedia_:
     "The road is first introduced in the third chapter of The Wonderful Wizard of Oz. The road begins in the heart of the eastern quadrant called Munchkin Country in the Land of Oz. It functions as a guideline that leads all who follow it, to the road's ultimate destination—the imperial capital of Oz called Emerald City that is located in the exact center of the entire continent. In the book, the novel's main protagonist, Dorothy, is forced to search for the road before she can begin her quest to seek the Wizard. This is because the cyclone from Kansas did not release her farmhouse closely near it as it did in the various film adaptations. After the council with the native Munchkins and their dear friend the Good Witch of the North, Dorothy begins looking for it and sees many pathways and roads nearby, (all of which lead in various directions). Thankfully it doesn't take her too long to spot the one paved with bright yellow bricks."
@@ -60,14 +60,14 @@ We think that's a pretty fair deal, and we're big believers in open source. If y
 Sunumlar
 -------------
 
-Yellowbrick has enjoyed the spotlight at a few conferences and in several presentations. We hope that these videos, talks, and slides will help you understand Yellowbrick a bit better.
+Yellowbrick, birkaç konferans ve sergilerde yer almaktan memnun olmustur. Sunduğumuz videolar,konuşmalar ve sunumların Yellowbrick`i daha iyi anlamanıza yardımcı olacağına inanıyoruz.
 
-Videos:
+Videolar:
     - `Visual Diagnostics for More Informed Machine Learning: Within and Beyond Scikit-Learn (PyCon 2016) <https://youtu.be/c5DaaGZWQqY>`_
     - `Visual Diagnostics for More Informed Machine Learning (PyData Carolinas 2016) <https://youtu.be/cgtNPx7fJUM>`_
     - `Yellowbrick: Steering Machine Learning with Visual Transformers (PyData London 2017) <https://youtu.be/2ZKng7pCB5k>`_
 
-Slides:
+Slaytlar:
     - `Visualizing the Model Selection Process <https://www.slideshare.net/BenjaminBengfort/visualizing-the-model-selection-process>`_
     - `Visualizing Model Selection with Scikit-Yellowbrick <https://www.slideshare.net/BenjaminBengfort/visualizing-model-selection-with-scikityellowbrick-an-introduction-to-developing-visualizers>`_
     - `Visual Pipelines for Text Analysis (Data Intelligence 2017) <https://speakerdeck.com/dataintelligence/visual-pipelines-for-text-analysis>`_
