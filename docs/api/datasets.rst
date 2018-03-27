@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Example Datasets
+Örnek Veri Setleri
 ================
 
 Yellowbrick hosts several datasets wrangled from the `UCI Machine

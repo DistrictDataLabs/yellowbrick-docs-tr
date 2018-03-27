@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Anscombe's Quartet
+Anscombe Dörtlüsü
 ==================
 
 Yellowbrick has learned Anscombe's lesson - which is why we believe that
@@ -17,7 +17,7 @@ visual diagnostics are vital to machine learning.
 
 .. image:: images/anscombe.png
 
-API Reference
+API Referansı
 -------------
 
 .. automodule:: yellowbrick.anscombe
