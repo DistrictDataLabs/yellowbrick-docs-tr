@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Model Seçim Eğitimi
+Model Seçimi Eğitimi
 ========================
 
 In this tutorial, we are going to look at scores for a variety of
