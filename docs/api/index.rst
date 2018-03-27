@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Visualizers and API
+Görselleştiriciler ve API
 ===================
 
 Welcome the API documentation for Yellowbrick! This section contains a complete listing of all currently available, production-ready visualizers along with code examples of how to use them. Use the links below to navigate to the reference for each visualization.

@@ -31,7 +31,7 @@ The Yellowbrick library is a diagnostic visualization platform for machine learn
 -----------
 Yellowbrick Paketi, Amerikan yazar L. Frank Baum tarafından 1900 yılında yazılan çocuk romanı **The Wonderful Wizard of Oz** (Oz Büyücüsü) içerisinde geçen kurgusal bir elementten adını almıştır. Kitapta, Roman kahramanı Dorothy Gale, Emerald Şehri`ndeki hedefine ulaşabilmesi için sarı tuğlalı yolu (yellowbrick) takip etmesi gerekmektedir.
 
-Wikipedia_ 'da şu şekilde geçmektedir:
+Wikipedia_ `da şu şekilde geçmektedir:
     "Bu yol ilk olarak Oz Büyücüsü`nün üçüncü bölümünde tanıtılmıştır. Yol, Oz Diyarı`nin doğu çeyreğinin kalbinde bulunan Munchkin ülkesinden başlamaktadır. Bu yol; takip eden herkese,en son varış yeri —kıtanın tam ortasında bulunan Oz emparyel başkenti olan Emerald şehrine kadar rehberlik etmektir. Kitapta, romanın ana karakteri Dorothy, büyücüyü aramaya başlamadan önce bu yolu bulması gerekmektedir. Bunun sebebi çeşitli film adaptasyonlarında gösterilenin aksine, Kansas`ta çıkan hortumun çiftlik evini bu yola yakın biryerde bırakmamasıdır. Munchkins yerlileriyle ve onların sevilen dostu Kuzey'in iyi kalpli cadısı ile yapılan konsey sonrasında, Dorothy bu yolu aramaya başlar ve yakınlarında birçok patikalar ve yolları görür, (Herbiri çeşitli yönlere gitmekte). Neyseki parlak sarı tuğlalarla kaplanmış yolu bulması çok uzun sürmez."
 
 Yellowbrick Ekibi
