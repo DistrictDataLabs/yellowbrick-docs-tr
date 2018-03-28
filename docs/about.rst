@@ -21,7 +21,7 @@ However, model selection is a bit more nuanced than simply picking the "right" o
   2. choosing a set of algorithms from a model family, and
   3. tuning the algorithm hyperparameters to optimize performance.
 
-**model seçim üçlüsü** 2015 yılında, Kumar et al tarafından yazılmış SIGMOD_ makalesinde ilk defa tanımlanmıştır. In their paper, which concerns the development of next-generation database systems built to anticipate predictive modeling, the authors cogently express that such systems are badly needed due to the highly experimental nature of machine learning in practice. "Model selection," they explain, "is iterative and exploratory because the space of [model selection triples] is usually infinite, and it is generally impossible for analysts to know a priori which [combination] will yield satisfactory accuracy and/or insights."
+Kumar et al tarafından **model seçim üçlüsü** 2015 yılı SIGMOD_ makalesinde ilk defa tanımlanmıştır. In their paper, which concerns the development of next-generation database systems built to anticipate predictive modeling, the authors cogently express that such systems are badly needed due to the highly experimental nature of machine learning in practice. "Model selection," they explain, "is iterative and exploratory because the space of [model selection triples] is usually infinite, and it is generally impossible for analysts to know a priori which [combination] will yield satisfactory accuracy and/or insights."
 
 İsim Kökeni
 -----------
