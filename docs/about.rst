@@ -21,7 +21,7 @@ Bununla birlikte, model seçimi basit şekilde "doğru" ya da "yanlış" algorit
   2. bir dizi algoritmaların bir model ailesinden seçimi ve
   3. performans optimizesi için algoritma hiperparametlerinin ayarlanması
 
-Kumar et al tarafından **model seçim üçlüsü** 2015 yılı SIGMOD_ makalesinde ilk defa tanımlanmıştır. In their paper, which concerns the development of next-generation database systems built to anticipate predictive modeling, the authors cogently express that such systems are badly needed due to the highly experimental nature of machine learning in practice. "Model selection," they explain, "is iterative and exploratory because the space of [model selection triples] is usually infinite, and it is generally impossible for analysts to know a priori which [combination] will yield satisfactory accuracy and/or insights."
+Kumar et al tarafından **model seçim üçlüsü** 2015 yılı SIGMOD_ makalesinde ilk defa tanımlanmıştır. Makale içerisinde, tahmin edici modelleme öngörüsü için inşaa edilen yeni nesil veritabanı sistemlerinin gelişimiyle ilgili olarak, makale yazarları bu tür sistemlerin pratikte makine öğreniminin büyük ölçüde deneysel yapısı sebebiyle çok fazla ihtiyaç olduğunu ifade ederler. "Model seçimini," şu şekilde açıklarlar, "tekrarlayıcı ve keşifseldir çünkü [model seçim üçlüsü] alanı genellikle sonsuzdur ve analizçiler için yeterli doğruluk ve kavrayış sağlayabilecek bir olası [kombinasyon] bilmek genelde imkansızdır."
 
 İsim Kökeni
 -----------
