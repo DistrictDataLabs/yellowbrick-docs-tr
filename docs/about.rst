@@ -5,7 +5,7 @@ Hakkında
 
 Resim sahibi QuatroCinco_, izniyle kullanılmıştır, Flickr Creative Commons.
 
-Yellowbrick, görsel analiz ve tanımlama araçları ile birlikte Scikit-Learn API_ `yi genişleten açık kaynak kodlu sade bir Python Projesidir. Yellowbrick API, Matplotlib`i  de kapsayarak yayınlamaya hazır figür ve interaktif veri keşfi oluşturmayı sağlarken bir yandan da geliştiricilere ayrıntılı figür kontrolu imkanı sağlamaktadır. Yellowbrick kullanıcılar için; Makine öğrenimi modellerinin performansını geliştirme, güvenirliliğini sağlama, değer tahmininde bulunma ve makine oğrenmesi iş akışında karşılaşılan problemleri teşhis etmede yardımcı olabilmektedir.
+Yellowbrick, görsel analiz ve tanımlama araçları ile birlikte Scikit-Learn API_ 'yi genişleten açık kaynak kodlu sade bir Python Projesidir. Yellowbrick API, Matplotlib'i de kapsayarak yayınlamaya hazır figür ve interaktif veri keşfi oluşturmayı sağlarken bir yandan da geliştiricilere ayrıntılı figür kontrolu imkanı sağlamaktadır. Yellowbrick kullanıcılar için; Makine öğrenimi modellerinin performansını geliştirme, güvenirliliğini sağlama, değer tahmininde bulunma ve makine oğrenmesi iş akışında karşılaşılan problemleri teşhis etmede yardımcı olabilmektedir.
 
 Son dönemlerde makine öğrenimi iş akışının büyük bir kısmı; grid search yöntemi, standartlaştırılmıs API ler ve GUI (Kullanıcı Grafik Arayüzü) tabanlı uygulamalar yoluyla otomatize edilmiştir. Bununla birlikte, pratikte insan sezgisi ve rehberliği, kaliteli modeller üzerinde detaylı arama yöntemlerine göre daha efektif odaklanma sağlamaktadir. Görsel model seçim işlemi yoluyla, veri bilimcileri; hatalara ve yanılgılara düşmeden finale, açıklanabilir modellere doğru ilerleyiş gösterebilmektedir.
 
@@ -13,7 +13,7 @@ Yellowbrick kütüphanesi, makine öğrenimi için veri bilimcilerine model seç
 
 Model Seçimi
 ---------------
-Makine öğrenimi tartışmaları sık sık model seçimi üzerine tekil odaklanma ile karakterize edilir. Gerek lojistik regresyon, karar ağaçları, Bayesian methodları veya yapay sinir ağları olsun; makine öğrenmesi uygulayıcıları tercihlerini genellikle hızlı bir şekilde açıklarlar. Bunun nedeni çoğunlukla tarihseldir. Modern üçüncü parti makine öğrenimi kütüphaneleri birçok modelin yayılmasını önemsiz olarak gösterse de, geleneksel olarak bu algoritmalardan birinin bile uygulaması ve ayarlanması yıllar süren çalışma gerektirmiştir. Sonuç olarak makine öğrenmesi uygulayıcıları diğerlerine göre daha belirgin  (ve muhtemelen daha yaygın olan) algoritmaları daha çok tercih etmeye yönelmiştir.
+Makine öğrenimi tartışmaları sık sık model seçimi üzerine tekil odaklanma ile karakterize edilir. Gerek lojistik regresyon, karar ağaçları, Bayesian methodları veya yapay sinir ağları olsun; makine öğrenmesi uygulayıcıları tercihlerini genellikle hızlı bir şekilde açıklarlar. Bunun nedeni çoğunlukla tarihseldir. Modern üçüncü parti makine öğrenimi kütüphaneleri birçok modelin yayılmasını önemsiz olarak gösterse de, geleneksel olarak bu algoritmalardan birinin bile uygulaması ve ayarlanması yıllar süren çalışma gerektirmiştir. Sonuç olarak makine öğrenmesi uygulayıcıları diğerlerine göre daha belirgin (ve muhtemelen daha yaygın olan) algoritmaları daha çok tercih etmeye yönelmiştir.
 
 Bununla birlikte, model seçimi basit şekilde "doğru" ya da "yanlış" algoritmayı seçmekten biraz daha nüanslıdır. Pratik olarak iş akışı şunları içermektedir:
 
@@ -21,7 +21,7 @@ Bununla birlikte, model seçimi basit şekilde "doğru" ya da "yanlış" algorit
   2. bir dizi algoritmaların bir model ailesinden seçimi ve
   3. performans optimizesi için algoritma hiperparametlerinin ayarlanması
 
-Kumar et al tarafından **model seçim üçlüsü** 2015 yılı SIGMOD_ makalesinde ilk defa tanımlanmıştır. Makale içerisinde, tahmin edici modelleme öngörüsü için inşaa edilen yeni nesil veritabanı sistemlerinin gelişimiyle ilgili olarak, makale yazarları bu tür sistemlerin pratikte makine öğreniminin büyük ölçüde deneysel yapısı sebebiyle çok fazla ihtiyaç olduğunu ifade ederler. "Model seçimini," şu şekilde açıklarlar, "tekrarlayıcı ve keşifseldir çünkü [model seçim üçlüsü] alanı genellikle sonsuzdur ve analizçiler için yeterli doğruluk ve kavrayış sağlayabilecek bir olası [kombinasyon] bilmek genelde imkansızdır."
+Kumar et al tarafından **model seçim üçlüsü** 2015 yılı SIGMOD_ makalesinde ilk defa tanımlanmıştır. Makale içerisinde, tahmin edici modelleme öngörüsü için inşaa edilen yeni nesil veritabanı sistemlerinin gelişimiyle ilgili olarak, makale yazarları pratikte makine öğreniminin büyük ölçüde deneysel yapısı sebebiyle bu tür sistemlere çok fazla ihtiyaç olduğunu ifade ederler. "Model seçimini," şu şekilde açıklarlar, "tekrarlayıcı ve keşifseldir çünkü [model seçim üçlüsü] alanı genellikle sonsuzdur ve analizçiler için yeterli doğruluk ve kavrayış sağlayabilecek bir olası [kombinasyon] bilmek genelde imkansızdır."
 
 İsim Kökeni
 -----------
@@ -33,9 +33,9 @@ Wikipedia_ `da şu şekilde geçmektedir:
 Yellowbrick Ekibi
 ----
 
-Yellowbrick is is developed by data scientists who believe in open source and the project enjoys contributions from Python developers all over the world. The project was started by `@rebeccabilbro`_ ve `@bbengfort`_ as an attempt to better explain machine learning concepts to their students; they quickly realized, however, that the potential for visual steering could have a large impact on practical data science and developed it into a high-level Python library.
+Yellowbrick açık kaynağa inanan veri bilimcileri tarafından geliştirilmiş ve tüm dünyadan Python geliştiricilerinin projeye katkıları memnuniyet vermiştir. Proje `@rebeccabilbro`_ ve `@bbengfort`_  tarafından makine öğrenmesi kavramlarını öğrencilerine daha iyi açıklamak amacıyla başlatılmış olup; bununla birlikte görsel yönlendirme potansiyelinin pratik veri bilimi üzerinde büyük bir etkiye sebep olabileceğini ve bunu yüksek düzey Python kütüphanesiyle gerçekleştirebileceklerini çok çabuk farkettiler. 
 
-Yellowbrick is incubated by `District Data Labs`_, an organization that is dedicated to collaboration and open source development. As part of District Data Labs, Yellowbrick was first introduced to the Python Community at `PyCon 2016 <https://youtu.be/c5DaaGZWQqY>`_ in both talks and during the development sprints. The project was then carried on through DDL Research Labs (semester-long sprints where members of the DDL community contribute to various data related projects).
+Yellowbrick, iş birliğine ve açık kaynak gelişimine hizmet eden bir organizasyon olan `District Data Labs`_ tarafından üretilmiştir. District Data Labs'ın bir parçası olan Yellowbrick, ilk olarak `PyCon 2016 <https://youtu.be/c5DaaGZWQqY>`_ da konuşmalarda ve geliştirme sprintlerinde Python topluluğuna tanıştırılmıştır. Daha sonra bu proje, DDL Araştırma Laboratuvarları (DDL topluluğu üyelerinin çeşitli  veri projeleri ile katkıda bulunduğu Sömestir - Uzun Sprintler) ile sürdürülmüştür.
 
 Lisans
 -------
