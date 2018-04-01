@@ -3,7 +3,7 @@
 Model Seçim Eğitseli
 ========================
 
-Bu eğitselde çeşitli `Scikit-Learn <http://scikit-learn.org>`__ modellerinin skorlarına bakacağız ve bunları `Yellowbrick <http://www.scikit-yb.org>`__ görsel tanı araçlarını kullanarak sırayla verilerimize göre en iyi modelin seçimi için karşılaştıracağız.
+Bu eğitselde, çeşitli `Scikit-Learn <http://scikit-learn.org>`__ modellerinin skorlarına bakacağız ve bunları `Yellowbrick <http://www.scikit-yb.org>`__ görsel tanı araçlarını kullanarak sırayla verilerimize göre en iyi modelin seçimi için karşılaştıracağız.
 
 Model Seçim Üçlüsü
 --------------------------
@@ -26,24 +26,15 @@ Yellowbrick kütüphanesi, makine öğrenimi için veri bilimcilerine model seç
 Veri Hakkında
 --------------
 
-This tutorial uses a modified version of the mushroom dataset_ from
-the `UCI Machine Learning Repository <http://archive.ics.uci.edu/ml/>`__.
-Our objective is to predict if a mushroom is poisonous or edible based on
-its characteristics.
+Bu eğitselde `UCI Machine Learning Repository <http://archive.ics.uci.edu/ml/>`__ adresinden alınan mantar veriseti_ nin düzenlenmiş versiyonu kullanılmaktadır. Amacımız, bir mantarın karakteristik özelliklerine göre zehirli ya da yenilebilir olup olmadığını tahmin etmektir.  
 
 .. _dataset: https://github.com/rebeccabilbro/rebeccabilbro.github.io/blob/master/data/agaricus-lepiota.txt
 
-The data include descriptions of hypothetical samples corresponding to
-23 species of gilled mushrooms in the Agaricus and Lepiota Family. Each
-species was identified as definitely edible, definitely poisonous, or of
-unknown edibility and not recommended (this latter class was combined
-with the poisonous one).
+Veri, Agaricus ve Lepiota ailesinin 23 çeşit solungaçlı mantar türüyle ilgili varsayımsal örneklerin açıklamalarını içermektedir. Her tür, kesinlikle yenilebilir kesinlikle yenemez veya yenilebilirliği bilinmeyen ya da tavsiye edilmeyen olarak tanımlanmıştır. (bu son sınıf zehirli sınıfıyla ile birleştirilmiştir).
 
-Our file, "agaricus-lepiota.txt," contains information for 3 nominally
-valued attributes and a target value from 8124 instances of mushrooms
-(4208 edible, 3916 poisonous).
+Dosyamız, "agaricus-lepiota.txt," 3 nominal değerli öznitelik ve 8124 mantar örneğinin hedef değerlerini içermektedir. (4208 yenilebilir, 3916 zehirli).
 
-Let's load the data with Pandas.
+Haydi Pandas ile verimizi yükleyelim.
 
 .. code:: python
 
