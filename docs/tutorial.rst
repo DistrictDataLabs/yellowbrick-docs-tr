@@ -146,7 +146,18 @@ recall, where an F1 score reaches its best value at 1 and worst at 0.
 
     F1 score = 2 * ((precision * recall) / (precision + recall))
 
-Now we're ready to make some predictions!
+
+::
+
+    hassasiyet = true positives / (true positives + false positives)
+
+    recall = true positives / (false negatives + true positives)
+
+    F1 score = 2 * ((precision * recall) / (precision + recall))
+
+
+
+Şimdi bazı tahminleri yapabilmek için hazırız.
 
 Let's build a way to evaluate multiple estimators -- first using
 traditional numeric scores (which we'll later compare to some visual
@@ -319,8 +330,7 @@ diagnostics from the Yellowbrick library).
 İlk Model Değerlendirmesi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Based on the results from the F1 scores above, which model is performing
-the best?
+Yukarıdaki F1 skorlarının sonuçlarını baz aldığınızda hangi model en iyi performansı göstermiştir?
 
 Görsel Model Değerlendirmesi
 -----------------------
