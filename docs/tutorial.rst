@@ -30,7 +30,7 @@ Bu eğitselde `UCI Machine Learning Repository <http://archive.ics.uci.edu/ml/>`
 
 .. _veriseti: https://github.com/rebeccabilbro/rebeccabilbro.github.io/blob/master/data/agaricus-lepiota.txt
 
-Veri, Agaricus ve Lepiota ailesinin 23 çeşit solungaçlı mantar türüyle ilgili varsayımsal örneklerin açıklamalarını içermektedir. Her tür, kesinlikle yenilebilir kesinlikle yenemez veya yenilebilirliği bilinmeyen ya da tavsiye edilmeyen olarak tanımlanmıştır. (bu son sınıf zehirli sınıfıyla ile birleştirilmiştir).
+Veri, Agaricus ve Lepiota ailesine ait 23 çeşit solungaçlı mantar türüyle ilgili varsayımsal örneklerin açıklamalarını içermektedir. Her tür, kesinlikle yenilebilir kesinlikle yenemez veya yenilebilirliği bilinmeyen ya da tavsiye edilmeyen olarak tanımlanmıştır. (bu son sınıf zehirli sınıfı ile birleştirilmiştir).
 
 Dosyamız, "agaricus-lepiota.txt," 3 nominal değerli öznitelik ve 8124 mantar örneğinin hedef değerlerini içermektedir. (4208 yenilebilir, 3916 zehirli).
 
@@ -74,15 +74,9 @@ Haydi Pandas ile verimizi yükleyelim.
 Özellik Çıkarımı
 ------------------
 
-Our data, including the target, is categorical. We will need to change
-these values to numeric ones for machine learning. In order to extract
-this from the dataset, we'll have to use Scikit-Learn transformers to
-transform our input dataset into something that can be fit to a model.
-Luckily, Sckit-Learn does provide a transformer for converting
-categorical labels into numeric integers:
+Verimiz, hedef de dahil olmak üzere kategoriktir. Makine öğrenmesi için bu değerleri sayısal değerlere çevirmemiz gerekecek. Sırasıyla veri setimizden bunu sağlamak amacıyla, veri setinde bulunan değerleri bir modele uygun birşeylere dönüştürmemiz için Scikit-Learn dönüştürücülerini kullanmamız gerekmektedir. Neyseki Scikit-Learn, kategorik etiketleri sayısal integer değerlerine çevirecek dönüştürücü sağlamaktadır
 `sklearn.preprocessing.LabelEncoder <http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html>`__.
-Unfortunately it can only transform a single vector at a time, so we'll
-have to adapt it in order to apply it to multiple columns.
+Maalesef tek seferde sadece bir vektörü dönüştürebiliriz, bu yüzden birden fazla sütuna sırayla uygulamamız için uyarlama yapmamız gerekiyor.
 
 .. code:: python
 
