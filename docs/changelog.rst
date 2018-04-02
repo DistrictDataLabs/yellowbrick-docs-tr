@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Changelog
+Değişiklik Kayıtları
 =========
 
 Version 0.5
