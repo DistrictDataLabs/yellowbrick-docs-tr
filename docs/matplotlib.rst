@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Effective Matplotlib
+Etkili Matplotlib
 ====================
 
 Yellowbrick generates visualizations by wrapping `matplotlib <http://matplotlib.org/>`_, the most prominent Python scientific visualization library. Because of this, Yellowbrick is able to generate publication-ready images for a variety of GUI backends, image formats, and Jupyter notebooks. Yellowbrick strives to provide well-styled visual diagnostic tools and complete information. However, to customize figures or roll your own visualizers, a strong background in using matplotlib is required.
