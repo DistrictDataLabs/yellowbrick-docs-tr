@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-User Testing Instructions
+Kullanıcı Testi Talimatları
 =========================
 
 We are looking for people to help us Alpha test the Yellowbrick project!

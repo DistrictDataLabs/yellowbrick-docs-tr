@@ -32,7 +32,7 @@ Bu eğitselde `UCI Machine Learning Repository <http://archive.ics.uci.edu/ml/>`
 
 Veri, Agaricus ve Lepiota ailesine ait 23 çeşit solungaçlı mantar türüyle ilgili varsayımsal örneklerin açıklamalarını içermektedir. Her tür, kesinlikle yenilebilir kesinlikle yenemez veya yenilebilirliği bilinmeyen ya da tavsiye edilmeyen olarak tanımlanmıştır. (bu son sınıf zehirli sınıfı ile birleştirilmiştir).
 
-Dosyamız, "agaricus-lepiota.txt," 3 nominal değerli öznitelik ve 8124 mantar örneğinin hedef değerlerini içermektedir. (4208 yenilebilir, 3916 zehirli).
+Dosyamız, "agaricus-lepiota.txt," 3 nominal değerli öznitelikleri ve 8124 mantar örneğinin hedef değerlerini içermektedir. (4208 yenilebilir, 3916 zehirli).
 
 Haydi Pandas ile verimizi yükleyelim.
 
