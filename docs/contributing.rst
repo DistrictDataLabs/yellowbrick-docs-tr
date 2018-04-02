@@ -1,6 +1,6 @@
 .. -*- mode: rst -*-
 
-Katkıda Bulun
+Katkıda Bulunun
 ============
 
 Yellowbrick is an open source project that is supported by a community who will gratefully and humbly accept any contributions you might make to the project. Large or small, any contribution makes a big difference; and if you've never contributed to an open source project before, we hope you will start with Yellowbrick!
