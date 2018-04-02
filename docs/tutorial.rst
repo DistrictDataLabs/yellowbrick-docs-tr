@@ -124,32 +124,25 @@ Modelleme ve Değerlendirme
 Sınıflandırıcı Değerlendirmesi için Genel Metrikler
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Precision** is the number of correct positive results divided by the
-number of all positive results (e.g. *How many of the mushrooms we
-predicted would be edible actually were?*).
+**Precision** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkan sonuçların sayısına bölünmesidir. (e.g. *Yenilebilir olarak tahmin ettiğimiz mantarların ne kadarı gerçekten yenilebilir*).
 
-**Recall** is the number of correct positive results divided by the
-number of positive results that should have been returned (e.g. *How
-many of the mushrooms that were poisonous did we accurately predict were
-poisonous?*).
+**Recall** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkması gereken sonuçların sayısına bölünmesidir. (e.g. *Zehirli mantarların ne kadarını kesin zehirli olarak tahmin edebildik*).
 
-The **F1 score** is a measure of a test's accuracy. It considers both
-the precision and the recall of the test to compute the score. The F1
-score can be interpreted as a weighted average of the precision and
-recall, where an F1 score reaches its best value at 1 and worst at 0.
+**F1 score** bir testin doğruluğunun ölçüsüdür. Bu skoru hesaplamak için testin hem kesinlik hem de hassasiyeti dikkate alınmaktadır. F1 skoru; en iyi değer 1 ve en kötü değer 0'a ulaştğı yerde, kesinlik ve hassasiyetin ağırlıklı ortalaması olarak da yorumlanabilir. 
+
+::
+
+    kesinlik = gerçek pozitifler / (gerçek pozitifler + yanlış pozitifler)
+
+    hassasiyet = gerçek pozitifler / (yanlış negatifler + gerçek pozitifler)
+
+    F1 skoru = 2 * ((kesinlik * hassasiyet) / (kesinlik + hassasiyet))
+
+
 
 ::
 
     precision = true positives / (true positives + false positives)
-
-    recall = true positives / (false negatives + true positives)
-
-    F1 score = 2 * ((precision * recall) / (precision + recall))
-
-
-::
-
-    hassasiyet = true positives / (true positives + false positives)
 
     recall = true positives / (false negatives + true positives)
 
