@@ -326,7 +326,7 @@ Yukarıdaki F1 skorlarının sonuçlarını baz aldığınızda hangi model en i
 Görsel Model Değerlendirmesi
 -----------------------
 
-Haydi şimdi model değerlendirme fonksiyonumuzu, Yellowbrick ``ClassificationReport`` sınıfını kullanmak için tekrar düzenleyelim, bir model görselleştiricisi kesinlik hassasiyet ve F1 skorlarını göstermektedir. Bu görsel model analiz aracı renk kodlu ısı haritasında olduğu gibi sayısal skorları, kolay yorumlama ve saptamaya destek amacıyla; özellikle kullanım durumumuzdaki amaca uygun (Hayat kurtarıcı, dengeli) Tip I ve Tip II hata nüanslarını birleştirir. 
+Haydi şimdi model değerlendirme fonksiyonumuzu, Yellowbrick ``ClassificationReport`` sınıfını kullanmak için tekrar düzenleyelim, bir model görselleştiricisi; kesinlik, hassasiyet ve F1 skorlarını göstermektedir. Bu görsel model analiz aracı renk kodlu ısı haritasında olduğu gibi sayısal skorları, kolay yorumlama ve saptamaya destek amacıyla; özellikle kullanım durumumuzdaki amaca uygun (Hayat kurtarıcı, dengeli) Tip I ve Tip II hata nüanslarını birleştirir. 
 
 **Tip I hata** (veya  **"yanlış pozitif"**) mevcut olmayan bir etkiyi tespit eder. (ör. aslında yenilebilir bir mantarın zehirli olarak saptanması).
 
