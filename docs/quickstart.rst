@@ -3,7 +3,7 @@
 Hızlı Başlangıç
 ===========
 
-If you're new to Yellowbrick, this guide will get you started and help you include visualizers in your machine learning workflow. Before we get started, however, there are several notes about development environments that you should consider.
+Yellowbrick'te yeniyseniz, bu kılavuz başlamanıza ve makine öğrenimi iş akışınıza görselleştiricileri dahil etmenize yardımcı olacaktır. Fakat başlamadan önce, geliştirme ortamlarıyla ilgili dikkate almanız gereken birkaç not bulunmakta.
 
 Yellowbrick has two primary dependencies: `Scikit-Learn <http://scikit-learn.org/>`_ and `Matplotlib <http://matplotlib.org/>`_. If you do not have these Python packages, they will be installed alongside Yellowbrick. Note that Yellowbrick works best with Scikit-Learn version 0.18 or later and Matplotlib version 2.0 or later. Both of these packages require some C code to be compiled, which can be difficult on some systems, like Windows. If you're having trouble, try using a distribution of Python that includes these packages like `Anaconda <https://anaconda.org>`_.
 
