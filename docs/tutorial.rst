@@ -451,4 +451,4 @@ Değerlendirme
 
 1. Hangi model en iyi gözükmektedir? Niçin?
 2. Hangisi büyük ihtimalle hayatınızı kurtaracaktır?
-3. Görsel model değerlendirme deneyiminin sayısal model değerlendirmesine göre nasıl farklıdır?
+3. Görsel model değerlendirme deneyiminin, sayısal model değerlendirmesinden farkı nedir?
