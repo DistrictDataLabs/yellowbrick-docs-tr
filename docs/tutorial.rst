@@ -124,9 +124,9 @@ Modelleme ve Değerlendirme
 Sınıflandırıcı Değerlendirmesi için Genel Metrikler
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Precision** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkan sonuçların sayısına bölünmesidir. (e.g. *Yenilebilir olarak tahmin ettiğimiz mantarların ne kadarı gerçekten yenilebilir*).
+**Precision** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkan sonuçların sayısına bölünmesidir. (ör. *Yenilebilir olarak tahmin ettiğimiz mantarların aslinda ne kadarı gerçekten yenilebilir*).
 
-**Recall** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkması gereken sonuçların sayısına bölünmesidir. (e.g. *Zehirli mantarların ne kadarını kesin zehirli olarak tahmin edebildik*).
+**Recall** gerçek olan pozitif sonuçların toplam sayısının, tüm pozitif çıkması gereken sonuçların sayısına bölünmesidir. (ör. *Zehirli mantarların ne kadarını kesin zehirli olarak tahmin edebildik*).
 
 **F1 score** bir testin doğruluğunun ölçüsüdür. Bu skoru hesaplamak için testin hem kesinlik hem de hassasiyeti dikkate alınmaktadır. F1 skoru; en iyi değer 1 ve en kötü değer 0'a ulaştğı yerde, kesinlik ve hassasiyetin ağırlıklı ortalaması olarak da yorumlanabilir. 
 
@@ -152,10 +152,7 @@ Sınıflandırıcı Değerlendirmesi için Genel Metrikler
 
 Şimdi bazı tahminleri yapabilmek için hazırız.
 
-Let's build a way to evaluate multiple estimators -- first using
-traditional numeric scores (which we'll later compare to some visual
-diagnostics from the Yellowbrick library).
-
+Birden fazla tahmin edicilerin değerlendirilmesi için bir yol oluşturalım --  Öncelikle klasik sayısal skorları (daha sonra Yellowbrick kütüphanesinden bazı görsel tanı araçlarıyla karşılaştırma yapacağımız) kullanarak.
 .. code:: python
 
     from sklearn.metrics import f1_score
@@ -328,21 +325,11 @@ Yukarıdaki F1 skorlarının sonuçlarını baz aldığınızda hangi model en i
 Görsel Model Değerlendirmesi
 -----------------------
 
-Now let's refactor our model evaluation function to use Yellowbrick's
-``ClassificationReport`` class, a model visualizer that displays the
-precision, recall, and F1 scores. This visual model analysis tool
-integrates numerical scores as well color-coded heatmap in order to
-support easy interpretation and detection, particularly the nuances of
-Type I and Type II error, which are very relevant (lifesaving, even) to
-our use case!
+Haydi şimdi model değerlendirme fonksiyonumuzu, Yellowbrick ``ClassificationReport`` sınıfını kullanmak için tekrar düzenleyelim, bir model görselleştiricisi kesinlik hassasiyet ve F1 skorlarını göstermektedir. Bu görsel model analiz aracı renk kodlu ısı haritasında olduğu gibi sayısal skorları, kolay yorumlama ve saptamaya destek amacıyla; özellikle kullanım durumumuzdaki amaca uygun (Hayat kurtarıcı, dengeli) Tip I ve Tip II hata nüanslarını birleştirir. 
 
-**Type I error** (or a **"false positive"**) is detecting an effect that
-is not present (e.g. determining a mushroom is poisonous when it is in
-fact edible).
+**Tip I hata** (veya  **"yanlış pozitif"**) mevcut olmayan bir etkiyi tespit eder. (ör. aslında yenilebilir bir mantarın zehirli olarak saptanması).
 
-**Type II error** (or a **"false negative"**) is failing to detect an
-effect that is present (e.g. believing a mushroom is edible when it is
-in fact poisonous).
+**Tip II hata** (veya  **"yanlış negatif"**) mevcut olan bir etkiyi tespit edememektir.(ör. aslında zehirli bir mantarın yenilebilir olduğuna inanılması).
 
 .. code:: python
 
@@ -461,7 +448,6 @@ in fact poisonous).
 Değerlendirme
 ----------
 
-1. Which model seems best now? Why?
-2. Which is most likely to save your life?
-3. How is the visual model evaluation experience different from numeric
-   model evaluation?
+1. Hangi model en iyi gözükmektedir? Niçin?
+2. Hangisi büyük ihtimalle hayatınızı kurtaracaktır?
+3. Görsel model değerlendirme deneyiminin sayısal model değerlendirmesine göre nasıl farklıdır?
