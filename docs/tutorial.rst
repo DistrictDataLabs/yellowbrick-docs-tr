@@ -153,6 +153,7 @@ Sınıflandırıcı Değerlendirmesi için Genel Metrikler
 Şimdi bazı tahminleri yapabilmek için hazırız.
 
 Birden fazla tahmin edicilerin değerlendirilmesi için bir yol oluşturalım --  Öncelikle klasik sayısal skorları (daha sonra Yellowbrick kütüphanesinden bazı görsel tanı araçlarıyla karşılaştırma yapacağımız) kullanarak.
+
 .. code:: python
 
     from sklearn.metrics import f1_score
