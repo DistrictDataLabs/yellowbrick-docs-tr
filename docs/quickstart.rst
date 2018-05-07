@@ -5,7 +5,7 @@ Hızlı Başlangıç
 
 Yellowbrick'te yeniyseniz, bu kılavuz başlamanıza ve makine öğrenimi iş akışınıza görselleştiricileri dahil etmenize yardımcı olacaktır. Fakat başlamadan önce, geliştirme ortamlarıyla ilgili dikkate almanız gereken birkaç not bulunmakta.
 
-Yellowbrick has two primary dependencies: `Scikit-Learn <http://scikit-learn.org/>`_ and `Matplotlib <http://matplotlib.org/>`_. If you do not have these Python packages, they will be installed alongside Yellowbrick. Note that Yellowbrick works best with Scikit-Learn version 0.18 or later and Matplotlib version 2.0 or later. Both of these packages require some C code to be compiled, which can be difficult on some systems, like Windows. If you're having trouble, try using a distribution of Python that includes these packages like `Anaconda <https://anaconda.org>`_.
+Yellowbrick'in iki temel bağlılığı bulunmaktadır: `Scikit-Learn <http://scikit-learn.org/>`_ ve `Matplotlib <http://matplotlib.org/>`_. Şayet bu Python paketleriniz yoksa, Yellowbrick'le  birlikte kurulacaktır. Yellowbrick en iyi Scikit-Learn 0.18 versiyonu veya üstü ve Matplotlib 2.0 versiyonu ve üstü ile en iyi çalıştığını dikkate alınız. Her iki paketin de derlenmesi için Windows gibi sistemler üzerinde derlenmesi zor olan bazı C kodlarına gereksinim duymaktadır. Şayet problem yaşıyorsanız `Anaconda <https://anaconda.org>`_ gibi bu paketleri de içeren bir Python dağıtımını deneyebilirsiniz.
 
 Yellowbrick is also commonly used inside of a `Jupyter Notebook <http://jupyter.org/>`_ alongside `Pandas <http://pandas.pydata.org/>`_ data frames. Notebooks make it especially easy to coordinate code and visualizations, however you can also use Yellowbrick inside of regular Python scripts, either saving figures to disk or showing figures in a GUI window. If you're having trouble with this, please consult Matplotlib's `backends documentation <https://matplotlib.org/faq/usage_faq.html#what-is-a-backend>`_.
 
@@ -14,7 +14,7 @@ Yellowbrick is also commonly used inside of a `Jupyter Notebook <http://jupyter.
 Kurulum
 ------------
 
-Yellowbrick is compatible with Python 2.7 or later, but it is preferred to use Python 3.5 or later to take full advantage of all functionality. The simplest way to install Yellowbrick is from PyPI_ with pip_, Python's preferred package installer.
+Yellowbrick, Python 2.7 ve üst sürümleri ile uyumludur fakat Yellowbrick`in tüm işlevlerinden yararlanmak için Python 3.5 ve üst sürümlerinin kullanımı tercih edilmektedir. Yellowbrick`i kurmanın en kolay yolu, PyPI_ `den Python`un tercih edilen paket kurulumcusu pip_ kullanımıdır. 
 
 .. code-block:: bash
 

@@ -15,7 +15,7 @@ Ayrıca yardım tekliflerinize açığız. Türkçe tercüme için katkıda bulu
 
 .. image:: images/visualizers.png
 
-Yellowbrick, insanların model seçim sürecini yönlendirmeye izin veren "Görselleştirici" adı verilen Scikit-Learn API`sini genişleten görsel tanı araçları paketidir. Kısacası Yellowbrick, Scikit-Learn`i Matplotlib ile Scikit-Learn dökümantasyonuna gore birleştirirek modelinize göre görselleştirme üretmektedir. Yellowbrick ile ilgili daha fazlası için, lütfen bakınız: :doc:`about`.
+Yellowbrick, insanların model seçim sürecini yönlendirmeye izin veren "Görselleştirici" adı verilen Scikit-Learn API`sini genişleten görsel tanı araçları paketidir. Kısacası Yellowbrick, Scikit-Learn`i Matplotlib ile Scikit-Learn dökümantasyonuna gore birleştirerek modelinize göre görselleştirme üretmektedir. Yellowbrick ile ilgili daha fazlası için, lütfen bakınız: :doc:`about`.
 
 Eğer Yellowbrick`te yeniyseniz, :doc:`quickstart` ya da bu kısmı geçerek :doc:`tutorial` kısmını ziyaret edebilirsiniz. Yellowbrick, düzenli olarak eklenen birçok görselleştiricisi ile zengin bir kütüphanedir. Spesifik Görselleştiriciler ve genişletilmiş kullanımları ile ilgili detayları  :doc:`api/index` kısmından bulabilirsiniz. Yellowbrick`e katkıda bulunmak ister misiniz? :ref:`contributing guide <contributing>` sayfasına göz atabilirsiniz. Şayet kullanıcı testi için başvurduysanız, :doc:`evaluation` sayfasına bakınız.(ve Teşekkür ederiz)
 
