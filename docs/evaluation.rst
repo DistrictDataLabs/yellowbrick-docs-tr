@@ -1,110 +1,83 @@
 .. -*- mode: rst -*-
 
 Kullanıcı Testi Talimatları
-=========================
+==========================
 
-We are looking for people to help us Alpha test the Yellowbrick project!
-Helping is simple: simply create a notebook that applies the concepts in
-this *Getting Started* guide to a small-to-medium size dataset of your
-choice. Run through the examples with the dataset, and try to change
-options and customize as much as possible. After you've exercised the
-code with your examples, respond to our `alpha testing
-survey <https://goo.gl/forms/naoPUMFa1xNcafY83>`__!
+Yellowbrick projesinin alfa testini yapmamıza yardımcı olacak kişiler arıyoruz!
+Yardım etmek basittir: Bu *Başlarken* kılavuzundaki kavramları seçtiğiniz küçük ila orta büyüklükteki bir veri kümesine uygulayan bir not defteri oluşturun. Örnekleri veri kümesiyle birlikte inceleyin ve seçenekleri değiştirmeye ve mümkün olduğunca özelleştirmeye çalışın. Örneklerinizle kodu çalıştırdıktan sonra `alfa test anketimize <https://goo.gl/forms/naoPUMFa1xNcafY83>`__ yanıt verin!
 
-Step One: Questionaire
+Birinci Adım: Anket
 ~~~~~~~~~~~~~~~~~~~~~~
-Please open the quesionaire, in order to familiarize yourself with the
-feedback that we are looking to receive. We are very interested in
-identifying any bugs in Yellowbrick. Please include al cells in your
-jupyter notebook that produce errors so that we may reproduce the
-problem.
+Lütfen anketi açın ve almak istediğimiz
+geri bildirimleri öğrenin. Yellowbrick'teki hataları belirlemekle çok ilgileniyoruz. Lütfen jupyter not defterinize hata üreten tüm hücreleri ekleyin, böylece sorunu yeniden üretebiliriz.
 
+İkinci Adım: Veri Seti
+~~~~~~~~~~~~~~~~~~
 
-Step Two: Dataset
-~~~~~~~~~~~~~~~~~
+Kendi çok değişkenli veri setinizi seçin; Yellowbrick'te çalıştırabileceğimiz veri setleri ne kadar çoksa (örneğin farklıysa), uç durumları ve istisnaları keşfetme olasılığımız o kadar artar! Veri setinizin Scikit-Learn ile modellemeye uygun olması gerektiğini unutmayın. Özellikle, hedefi aşağıdaki denetlenen
+öğrenme görevlerine uygun bir veri kümesi seçmenizi öneririz:
 
-Select a multivariate dataset of your own; the more (e.g. different)
-datasets that we can run through Yellowbrick, the more likely we'll
-discover edge cases and exceptions! Note that your dataset must be
-well-suited to modeling with Scikit-Learn. In particular we recommend
-you choose a dataset whose target is suited to the following supervised
-learning tasks:
+- `Regression <https://en.wikipedia.org/wiki/Regression_analysis>`__
+(hedef sürekli bir değişkendir)
+- `Classification <https://en.wikipedia.org/wiki/Classification_in_machine_learning>`__
+(hedef ayrık bir değişkendir)
 
--  `Regression <https://en.wikipedia.org/wiki/Regression_analysis>`__
-   (target is a continuous variable)
--  `Classification <https://en.wikipedia.org/wiki/Classification_in_machine_learning>`__
-   (target is a discrete variable)
+Her iki analiz türüne de uygun veri kümeleri vardır;
+her iki durumda da bu not defterindeki test metodolojisini her iki görev türü için de (veya her ikisi için de) kullanabilirsiniz. Bir veri kümesi bulmak için, aşağıdaki yerleri denemenizi öneririz:
 
-There are datasets that are well suited to both types of analysis;
-either way you can use the testing methodology from this notebook for
-either type of task (or both). In order to find a dataset, we recommend
-you try the following places:
+- `UCI Makine Öğrenmesi Deposu <http://archive.ics.uci.edu/ml/>`__
+- `MLData.org <http://mldata.org/>`__
+- `Harika Genel
+Veri Kümeleri <https://github.com/caesar0301/awesome-public-datasets>`__
 
--  `UCI Machine Learning Repository <http://archive.ics.uci.edu/ml/>`__
--  `MLData.org <http://mldata.org/>`__
--  `Awesome Public
-   Datasets <https://github.com/caesar0301/awesome-public-datasets>`__
+Kendi veri kümenizi seçmenizden memnuniyet duyarız, ancak en azından test sonuçlarınızı içeren not defterini incelememiz için
+kamuya açık hale getirmenizi rica ediyoruz. Veriler de kamuya açıksa (veya
+birincil katkıda bulunanlarla paylaşmaya istekliyseniz) bu, hataları ve gerekli özellikleri çok daha kolay bir şekilde anlamamıza yardımcı olacaktır!
 
-You're more than welcome to choose a dataset of your own, but we do ask
-that you make at least the notebook containing your testing results
-publicly available for us to review. If the data is also public (or
-you're willing to share it with the primary contributors) that will help
-us figure out bugs and required features much more easily!
+Üçüncü Adım: Not Defteri
+~~~~~~~~~~~~~~~~~~~~~
 
-Step Three: Notebook
-~~~~~~~~~~~~~~~~~~~~
+GitHub deposunda bir not defteri oluşturun. Aşağıdakileri öneriyoruz:
 
-Create a notebook in a GitHub repository. We suggest the following:
+1. Yellowbrick deposunu çatallandırın
+2. ``examples`` dizininde, GitHub kullanıcı adınızla adlandırılmış bir dizin oluşturun
+3. ``testing`` adlı bir not defteri oluşturun, yani examples/USERNAME/testing.ipynb
 
-1. Fork the Yellowbrick repository
-2. Under the ``examples`` directory, create a directory named with your
-   GitHub username
-3. Create a notebook named ``testing``, i.e. examples/USERNAME/testing.ipynb
+Alternatif olarak, bize Gist veya kendi
+deponuz aracılığıyla bir not defteri gönderebilirsiniz. Ancak, Yellowbrick'i çatallandırırsanız, örneğinizin galerimize eklenmesi için bir çekme
+isteği başlatabilirsiniz!
 
-Alternatively, you could just send us a notebook via Gist or your own
-repository. However, if you fork Yellowbrick, you can initiate a pull
-request to have your example added to our gallery!
+Dördüncü Adım: Yellowbrick ve Scikit-Learn ile modelleme
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Step Four: Model with Yellowbrick and Scikit-Learn
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Aşağıdakileri not defterine ekleyin:
 
-Add the following to the notebook:
+- Markdown'da bir başlık
+- Veri setinin açıklaması ve nereden elde edildiği
+- Verileri bir Pandas veri çerçevesine veya NumPy matrisine yükleyen bir bölüm
 
--  A title in markdown
--  A description of the dataset and where it was obtained
--  A section that loads the data into a Pandas dataframe or NumPy matrix
+Ardından aşağıdaki modelleme etkinliklerini gerçekleştirin:
 
-Then conduct the following modeling activities:
+- Scikit-Learn ve Yellowbrick kullanarak özellik analizi
+- Scikit-Learn ve Yellowbrick kullanarak tahmin edici uydurma
 
--  Feature analysis using Scikit-Learn and Yellowbrick
--  Estimator fitting using Scikit-Learn and Yellowbrick
+``examples`` dizinimizi takip edebilirsiniz (`examples.ipynb <https://github.com/DistrictDataLabs/yellowbrick/blob/master/examples/examples.ipynb>`__ adresine bakın)
+veya kendi özel görselleştiricilerinizi bile oluşturabilirsiniz! Amaç, veri yüklemesinden tahmin edicilere kadar görselleştiricilerle uçtan uca bir model oluşturmanızdır.
 
-You can follow along with our ``examples`` directory (check out
-`examples.ipynb <https://github.com/DistrictDataLabs/yellowbrick/blob/master/examples/examples.ipynb>`__)
-or even create your own custom visualizers! The goal is that you create
-an end-to-end model from data loading to estimator(s) with visualizers
-along the way.
+**ÖNEMLİ**: Lütfen üçüncü adım için aldığınız tüm hataları ve
+tüm geri izlemeleri kaydettiğinizden emin olun!
 
-**IMPORTANT**: please make sure you record all errors that you get and
-any tracebacks you receive for step three!
-
-Step Five: Feedback
+Beşinci Adım: Geri Bildirim
 ~~~~~~~~~~~~~~~~~~~
 
-Finally, submit feedback via the Google Form we have created:
+Son olarak, oluşturduğumuz Google Formu aracılığıyla geri bildirim gönderin:
 
 https://goo.gl/forms/naoPUMFa1xNcafY83
 
-This form is allowing us to aggregate multiple submissions and bugs so
-that we can coordinate the creation and management of issues. If you are
-the first to report a bug or feature request, we will make sure you're
-notified (we'll tag you using your Github username) about the created
-issue!
+Bu form, sorunların oluşturulmasını ve yönetimini koordine edebilmemiz için birden fazla gönderimi ve hatayı bir araya getirmemize olanak tanır. Bir hatayı veya özellik isteğini bildiren ilk kişi siz olursanız, oluşturulan sorun hakkında bilgilendirildiğinizden emin olacağız (sizi Github kullanıcı adınızı kullanarak etiketleyeceğiz)!
 
-Step Six: Thanks!
+Altıncı Adım: Teşekkürler!
 ~~~~~~~~~~~~~~~~~
 
-Thank you for helping us make Yellowbrick better! We'd love to see pull
-requests for features you think would be extend the library. We'll also
-be doing a user study that we would love for you to participate in. Stay
-tuned for more great things from Yellowbrick!
+Yellowbrick'i daha iyi hale getirmemize yardımcı olduğunuz için teşekkür ederiz! Kütüphaneyi genişleteceğini düşündüğünüz özellikler için çekme
+istekleri görmeyi çok isteriz. Ayrıca, sizin de katılmanızı isteyeceğimiz bir kullanıcı çalışması yapacağız. Yellowbrick'ten daha fazla harika şey için bizi izlemeye devam edin!

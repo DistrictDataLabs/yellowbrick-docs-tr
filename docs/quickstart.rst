@@ -1,224 +1,224 @@
-.. -*- mode: rst -*-
+.. -*- mod: ilk -*-
 
 Hızlı Başlangıç
 ===========
 
-Yellowbrick'te yeniyseniz, bu kılavuz başlamanıza ve makine öğrenimi iş akışınıza görselleştiricileri dahil etmenize yardımcı olacaktır. Fakat başlamadan önce, geliştirme ortamlarıyla ilgili dikkate almanız gereken birkaç not bulunmakta.
+Yellowbrick'te yeniyseniz, bu kılavuzla başlamanıza ve makine kayıtlarınıza iş akışınıza görselleştiricileri dahil depolamaya yardımcı olacaktır. Fakat başlamadan önce, iyileşme ortamlarıyla ilgili düşüşlerin olması gereken birkaç tane bulunmuyor.
 
-Yellowbrick'in iki temel bağlılığı bulunmaktadır: `Scikit-Learn <http://scikit-learn.org/>`_ ve `Matplotlib <http://matplotlib.org/>`_. Şayet bu Python paketleriniz yoksa, Yellowbrick'le  birlikte kurulacaktır. Yellowbrick, Scikit-Learn 0.18 versiyonu veya üstü ve Matplotlib 2.0 versiyonu ve üstü ile en iyi çalıştığını dikkate alınız. Her iki paketin de derlenmesi için Windows gibi sistemler üzerinde derlenmesi zor olan bazı C kodlarına gereksinim duymaktadır. Şayet problem yaşıyorsanız `Anaconda <https://anaconda.org>`_ gibi bu paketleri de içeren bir Python dağıtımını deneyebilirsiniz.
+Yellowbrick'in iki temel bağlılığı bulunmaktadır: `Scikit-Learn <http://scikit-learn.org/>`_ ve `Matplotlib <http://matplotlib.org/>`_. Şayet bu Python depolarınız yoksa, Yellowbrick'le birlikte kurulacaktır. Yellowbrick, Scikit-Learn 0.18 versiyonu veya üstü ve Matplotlib 2.0 versiyonu ve üstü ile en iyi şekilde gözlemlendiniz. Her iki paketin de derlenmesi için Windows gibi sistemler üzerinde derlenmesi zor olan bazı C kodlarında değişiklik yaşanmaktadır. Sorun yaşıyorsanız `Anaconda <https://anaconda.org>`_ gibi bu paketleri içeren bir Python dağıtım paketini .
 
-Yellowbrick is also commonly used inside of a `Jupyter Notebook <http://jupyter.org/>`_ alongside `Pandas <http://pandas.pydata.org/>`_ data frames. Notebooks make it especially easy to coordinate code and visualizations, however you can also use Yellowbrick inside of regular Python scripts, either saving figures to disk or showing figures in a GUI window. If you're having trouble with this, please consult Matplotlib's `backends documentation <https://matplotlib.org/faq/usage_faq.html#what-is-a-backend>`_.
+Yellowbrick ayrıca `Pandas <http://pandas.pydata.org/>`_ veri çerçevelerinin yanında `Jupyter Notebook <http://jupyter.org/>`_ içinde yaygın olarak kullanılır. Defterler özellikle kod ve görselleştirmeleri koordine etmeyi kolaylaştırır, ancak Yellowbrick'i normal Python betiklerinin içinde de kullanabilir, ya rakamları diske kaydedebilir ya da rakamları bir GUI penceresinde gösterebilirsiniz. Bununla ilgili sorun yaşıyorsanız lütfen Matplotlib'in `arka uçlar belgelerine <https://matplotlib.org/faq/usage_faq.html#what-is-a-backend>`_ bakın.
 
-.. NOTE:: Jupyter, Pandas, and other ancillary libraries like NLTK for text visualizers are not installed with Yellowbrick and must be installed separately.
+.. NOT:: Jupyter, Pandas ve metin görselleştiricileri için NLTK gibi diğer yardımcı kütüphaneler Yellowbrick ile birlikte kurulmaz ve ayrı olarak kurulmalıdır.
 
 Kurulum
 ------------
 
-Yellowbrick, Python 2.7 ve üst sürümleri ile uyumludur fakat Yellowbrick`in tüm işlevlerinden yararlanmak için Python 3.5 ve üst sürümlerinin kullanımı tercih edilmektedir. Yellowbrick`i kurmanın en kolay yolu, PyPI_ `den Python`un tercih edilen paket kurulumcusu pip_ kullanımıdır. 
+Yellowbrick, Python 2.7 ve üst dayanıklılık ile uyumludur ancak Yellowbrick'in tüm işlevlerinden faydalanmak için Python 3.5 ve üst dayanıklılığın kullanımı tercih edilmektedir. Yellowbrick`i kurmanın en kolay yolu, PyPI_`den Python`un tercih edilen paket kurulumcusu pip_ kullanımıdır.
 
-.. code-block:: bash
+.. kod bloğu:: bash 
 
-    $ pip install yellowbrick
+$ pip sarı tuğlayı yükle
 
 .. _PyPI: https://pypi.python.org/pypi/yellowbrick
 .. _pip: https://docs.python.org/3/installing/
 
-Note that Yellowbrick is an active project and routinely publishes new releases with more visualizers and updates. In order to upgrade Yellowbrick to the latest version, use pip as follows.
+Yellowbrick'in aktif bir proje olduğunu ve daha fazla görselleştirici ve güncelleme içeren yeni sürümleri düzenli olarak yayınladığını unutmayın. Yellowbrick'i son sürüme yükseltmek için pip'i aşağıdaki gibi kullanın.
 
 .. code-block:: bash
 
-    $ pip install -u yellowbrick
+$ pip install -u yellowbrick
 
-You can also use the ``-u`` flag to update Scikit-Learn, matplotlib, or any other third party utilities that work well with Yellowbrick to their latest versions.
+Ayrıca, Yellowbrick ile iyi çalışan Scikit-Learn, matplotlib veya diğer üçüncü taraf yardımcı programlarını en son sürümlerine güncellemek için ``-u`` bayrağını kullanabilirsiniz.
 
-If you're using Windows or Anaconda, you can take advantage of the `conda <https://conda.io/docs/intro.html>`_ utility to install the `Anaconda Yellowbrick package <https://anaconda.org/DistrictDataLabs/yellowbrick>`_:
+Windows veya Anaconda kullanıyorsanız, `conda <https://conda.io/docs/intro.html>`_ yardımcı programından yararlanarak `Anaconda Yellowbrick paketini <https://anaconda.org/DistrictDataLabs/yellowbrick>`_ yükleyebilirsiniz:
 
 .. code-block:: bash
 
-    conda install -c districtdatalabs yellowbrick
+conda install -c districtdatalabs yellowbrick
 
-.. WARNING:: There is a `known bug <https://github.com/DistrictDataLabs/yellowbrick/issues/205>`_ installing matplotlib on Linux with Anaconda. If you're having trouble please let us know on GitHub.
+.. UYARI:: Anaconda ile Linux'a matplotlib yüklerken `bilinen bir hata <https://github.com/DistrictDataLabs/yellowbrick/issues/205>`_ var. Sorun yaşıyorsanız lütfen GitHub'da bize bildirin.
 
-Once installed, you should be able to import Yellowbrick without an error, both in Python and inside of Jupyter notebooks. Note that because of matplotlib, Yellowbrick does not work inside of a virtual environment without jumping through some hoops.
+Kurulduktan sonra Yellowbrick'i hem Python'da hem de Jupyter not defterlerinde hatasız bir şekilde içe aktarabilmeniz gerekir. Matplotlib nedeniyle Yellowbrick'in bazı engelleri aşmadan sanal bir ortamda çalışmadığını unutmayın.
 
 Yellowbrick Kullanımı
 -----------------
-The Yellowbrick API is specifically designed to play nicely with Scikit-Learn. The primary interface is therefore a ``Visualizer`` -- an object that learns from data to produce a visualization. Visualizers are Scikit-Learn `Estimator <http://scikit-learn.org/stable/developers/contributing.html#apis-of-scikit-learn-objects>`_ objects and have a similar interface along with methods for drawing. In order to use visualizers, you simply use the same workflow as with a Scikit-Learn model, import the visualizer, instantiate it, call the visualizer's ``fit()`` method, then in order to render the visualization, call the visualizer's ``poof()`` method, which does the magic!
+Yellowbrick API'si özellikle Scikit-Learn ile uyumlu çalışacak şekilde tasarlanmıştır. Bu nedenle birincil arayüz bir ``Görselleştirici``dir -- bir görselleştirme üretmek için verilerden öğrenen bir nesne. Görselleştiriciler Scikit-Learn `Estimator <http://scikit-learn.org/stable/developers/contributing.html#apis-of-scikit-learn-objects>`_ nesneleridir ve çizim yöntemleriyle birlikte benzer bir arayüze sahiptir. Görselleştiricileri kullanmak için, Scikit-Learn modeliyle aynı iş akışını kullanmanız, görselleştiriciyi içe aktarmanız, onu örneklemeniz, görselleştiricinin ``fit()`` yöntemini çağırmanız, ardından görselleştirmeyi işlemek için görselleştiricinin ``poof()`` yöntemini çağırmanız yeterlidir; bu sihiri gerçekleştirir!
 
-For example, there are several visualizers that act as transformers, used to perform feature analysis prior to fitting a model. Here is an example to visualize a high dimensional data set with parallel coordinates:
-
-.. code-block:: python
-
-    from yellowbrick.features import ParallelCoordinates
-
-    visualizer = ParallelCoordinates()
-    visualizer.fit_transform(X, y)
-    visualizer.poof()
-
-As you can see, the workflow is very similar to using a Scikit-Learn transformer, and visualizers are intended to be integrated along with Scikit-Learn utilities. Arguments that change how the visualization is drawn can be passed into the visualizer upon instantiation, similarly to how hyperparameters are included with Scikit-Learn models.
-
-The ``poof()`` method finalizes the drawing (adding titles, axes labels, etc) and then renders the image on your behalf. If you're in a Jupyter notebook, the image should just appear. If you're in a Python script, a GUI window should open with the visualization in interactive form. However, you can also save the image to disk by passing in a file path as follows:
+Örneğin, bir modeli uydurmadan önce özellik analizi gerçekleştirmek için kullanılan dönüştürücüler gibi davranan birkaç görselleştirici vardır. İşte paralel koordinatlarla yüksek boyutlu bir veri kümesini görselleştirmek için bir örnek:
 
 .. code-block:: python
 
-    visualizer.poof(outpath="pcoords.png")
+from yellowbrick.features import ParallelCoordinates
 
-The extension of the filename will determine how the image is rendered, in addition to the .png extension, .pdf is also commonly used.
+visualizer = ParallelCoordinates()
+visualizer.fit_transform(X, y)
+visualizer.poof()
 
-.. NOTE:: Data input to Yellowbrick is identical to that of Scikit-Learn: a dataset, ``X``, which is a two-dimensional matrix of shape ``(n,m)`` where ``n`` is the number of instances (rows) and ``m`` is the number of features (columns). The dataset ``X`` can be a Pandas DataFrame, a Numpy array, or even a Python list of lists. Optionally, a vector ``y``, which represents the target variable (in supervised learning), can also be supplied as input. The target ``y`` must have length ``n`` -- the same number of elements as rows in ``X`` and can be a Pandas Series, Numpy array, or Python list.
+Gördüğünüz gibi, iş akışı bir Scikit-Learn dönüştürücüsünü kullanmaya çok benzer ve görselleştiricilerin Scikit-Learn yardımcı programlarıyla birlikte entegre edilmesi amaçlanmıştır. Görselleştirmenin nasıl çizileceğini değiştiren argümanlar, Scikit-Learn modellerine hiperparametrelerin nasıl dahil edildiğine benzer şekilde, örnekleme sırasında görselleştiriciye geçirilebilir.
 
-Visualizers can also wrap Scikit-Learn models for evaluation, hyperparameter tuning and algorithm selection. For example, to produce a visual heatmap of a classification report, displaying the precision, recall, F1 score, and support for each class in a classifier, wrap the estimator in a visualizer as follows:
-
-.. code-block:: python
-
-    from yellowbrick.classifier import ClassificationReport
-    from sklearn.linear_model import LogisticRegression
-
-    model = LogisticRegression()
-    visualizer = ClassificationReport(model)
-
-    visualizer.fit(X_train, y_train)
-    visualizer.score(X_test, y_test)
-    visualizer.poof()
-
-Only two additional lines of code are required to add visual evaluation of the classifier model, the instantiation of a ``ClassificationReport`` visualizer that wraps the classification estimator and a call to its ``poof()`` method. In this way, Visualizers *enhance* the machine learning workflow without interrupting it.
-
-.. TODO:: Walkthrough visual pipelines and text analysis.
-
-The class-based API is meant to integrate with Scikit-Learn directly, however on occasion there are times when you just need a quick visualization. Yellowbrick supports quick functions for taking advantage of this directly. For example, the two visual diagnostics could have been instead implemented as follows:
+``poof()`` yöntemi çizimi sonlandırır (başlıklar, eksen etiketleri vb. ekleyerek) ve ardından sizin adınıza görüntüyü işler. Bir Jupyter not defterindeyseniz, görüntü yalnızca görünmelidir. Bir Python betiğindeyseniz, görselleştirmenin etkileşimli biçimde olduğu bir GUI penceresi açılmalıdır. Ancak, aşağıdaki gibi bir dosya yolu geçirerek görüntüyü diske de kaydedebilirsiniz:
 
 .. code-block:: python
 
-    from sklearn.linear_model import LogisticRegression
+visualizer.poof(outpath="pcoords.png")
 
-    from yellowbrick.features import parallel_coordinates
-    from yellowbrick.classifier import classification_report
+Dosya adının uzantısı, görüntünün nasıl işleneceğini belirler, .png uzantısına ek olarak, .pdf de yaygın olarak kullanılır.
 
-    # Displays parallel coordinates
-    g = parallel_coordinates(X, y)
+.. NOT:: Yellowbrick'e veri girişi, Scikit-Learn'e veri girişiyle aynıdır: ``(n,m)`` şeklinde iki boyutlu bir matris olan ``X`` adlı bir veri kümesi; burada ``n`` örnek sayısı (satırlar) ve ``m`` özellik sayısı (sütunlar)dır. ``X`` adlı veri kümesi bir Pandas DataFrame, bir Numpy dizisi veya hatta bir Python liste listesi olabilir. İsteğe bağlı olarak, hedef değişkeni (denetimli öğrenmede) temsil eden bir vektör ``y`` de giriş olarak sağlanabilir. Hedef ``y`` ``n`` uzunluğunda olmalıdır -- ``X`` deki satırlarla aynı sayıda elemana sahip olmalı ve bir Pandas Serisi, Numpy dizisi veya Python listesi olabilir.
 
-    # Displays classification report
-    g = classification_report(LogisticRegression(), X, y)
+Görselleştiriciler ayrıca değerlendirme, hiperparametre ayarlama ve algoritma seçimi için Scikit-Learn modellerini sarabilir. Örneğin, bir sınıflandırma raporunun görsel ısı haritasını oluşturmak, bir sınıflandırıcıdaki her sınıf için hassasiyeti, geri çağırmayı, F1 puanını ve desteği görüntülemek için, tahmin ediciyi aşağıdaki gibi bir görselleştiriciye sarın:
 
-These quick functions give you slightly less control over the machine learning workflow, but quickly get you diagnostics on demand and are very useful in exploratory processes.
+.. code-block:: python
+
+from yellowbrick.classifier import ClassificationReport
+from sklearn.linear_model import LogisticRegression
+
+model = LogisticRegression()
+visualizer = ClassificationReport(model)
+
+visualizer.fit(X_train, y_train)
+visualizer.score(X_test, y_test)
+visualizer.poof()
+
+Sınıflandırıcı modelinin görsel değerlendirmesini eklemek için yalnızca iki ek kod satırı, sınıflandırma tahmin edicisini saran bir ``ClassificationReport`` görselleştiricisinin örneklenmesi ve ``poof()`` yöntemine bir çağrı gereklidir. Bu şekilde, Görselleştiriciler makine öğrenimi iş akışını kesintiye uğratmadan *geliştirir*.
+
+.. TODO:: Görsel işlem hatları ve metin analizinin incelenmesi.
+
+Sınıf tabanlı API, Scikit-Learn ile doğrudan entegre olmak üzere tasarlanmıştır, ancak bazen sadece hızlı bir görselleştirmeye ihtiyaç duyduğunuz zamanlar olur. Yellowbrick, bundan doğrudan yararlanmak için hızlı işlevleri destekler. Örneğin, iki görsel tanılama bunun yerine aşağıdaki gibi uygulanabilirdi:
+
+.. code-block:: python
+
+from sklearn.linear_model import LogisticRegression
+
+from yellowbrick.features import parallel_coordinates
+from yellowbrick.classifier import classification_report
+
+# Paralel koordinatları görüntüler
+g = parallel_coordinates(X, y)
+
+# Sınıflandırma raporunu görüntüler
+g = classification_report(LogisticRegression(), X, y)
+
+Bu hızlı işlevler, makine öğrenimi iş akışı üzerinde size biraz daha az kontrol sağlar, ancak talep üzerine tanılamaları hızla sağlar ve keşif süreçlerinde çok faydalıdır.
 
 Açıklamalar
 -----------
 
-Consider a regression analysis as a simple example of the use of visualizers in the machine learning workflow. Using a `bike sharing dataset <https://s3.amazonaws.com/ddl-data-lake/yellowbrick/bikeshare.zip>`_ based upon the one uploaded to the `UCI Machine Learning Repository <https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset>`_, we would like to predict the number of bikes rented in a given hour based on features like the season, weather, or if it's a holiday.
+Makine öğrenimi iş akışında görselleştiricilerin kullanımına dair basit bir örnek olarak regresyon analizini ele alalım. `UCI Makine Öğrenimi Deposu <https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset>`_'ne yüklenen veriye dayalı bir `bisiklet paylaşım veri seti <https://s3.amazonaws.com/ddl-data-lake/yellowbrick/bikeshare.zip>`_ kullanarak, mevsim, hava durumu veya tatil olup olmadığı gibi özelliklere göre belirli bir saatte kiralanan bisiklet sayısını tahmin etmek istiyoruz.
 
-.. note:: We have updated the dataset from the UCI ML repository to make it a bit easier to load into Pandas; make sure you download the `Yellowbrick version of the dataset <https://s3.amazonaws.com/ddl-data-lake/yellowbrick/bikeshare.zip>`_.
+.. not:: Pandas'a yüklemeyi biraz daha kolaylaştırmak için UCI ML deposundaki veri setini güncelledik; `Veri kümesinin Yellowbrick versiyonunu <https://s3.amazonaws.com/ddl-data-lake/yellowbrick/bikeshare.zip>`_ indirdiğinizden emin olun.
 
-After downloading the dataset and unzipping it in your current working directory, we can load our data as follows:
+Veri setini indirip mevcut çalışma dizininize açtıktan sonra, verilerimizi şu şekilde yükleyebiliriz:
 
 .. code-block:: python
 
-    import pandas as pd
+import pandas as pd
 
-    data = pd.read_csv('bikeshare.csv')
-    X = data[[
-        "season", "month", "hour", "holiday", "weekday", "workingday",
-        "weather", "temp", "feelslike", "humidity", "windspeed"
-    ]]
-    y = data["riders"]
+data = pd.read_csv('bikeshare.csv')
+X = data[[
+"season", "month", "hour", "holiday", "weekday", "workingday",
+"weather", "temp", "feelslike", "humidity", "windspeed"
+]]
+y = data["riders"]
 
-The machine learning workflow is the art of creating *model selection triples*, a combination of features, algorithm, and hyperparameters that uniquely identifies a model fitted on a specific data set. As part of our feature selection, we want to identify features that have a linear relationship with each other, potentially introducing covariance into our model and breaking OLS (guiding us toward removing features or using regularization). We can use the Rank2D_ visualizer to compute Pearson correlations between all pairs of features as follows:
+Makine öğrenimi iş akışı, belirli bir veri setine uyan bir modeli benzersiz bir şekilde tanımlayan özellikler, algoritma ve hiperparametrelerin bir kombinasyonu olan *model seçimi üçlüleri* oluşturma sanatıdır. Özellik seçimimizin bir parçası olarak, birbirleriyle doğrusal bir ilişkiye sahip olan özellikleri belirlemek istiyoruz, bu da modelimize kovaryans katabilir ve OLS'yi bozabilir (bizi özellikleri kaldırmaya veya düzenleme kullanmaya yönlendirir). Tüm özellik çiftleri arasındaki Pearson korelasyonlarını hesaplamak için Rank2D_ görselleştiricisini şu şekilde kullanabiliriz:
 
 .. _Rank2D: http://www.scikit-yb.org/en/latest/api/yellowbrick.features.html#module-yellowbrick.features.rankd
 
 .. code-block:: python
 
-   from yellowbrick.features import Rank2D
+from yellowbrick.features import Rank2D
 
-   visualizer = Rank2D(algorithm="pearson")
-   visualizer.fit_transform(X)
-   visualizer.poof()
+visualizer = Rank2D(algorithm="pearson")
+visualizer.fit_transform(X)
+visualizer.poof()
 
 .. image:: images/quickstart/bikeshare_rank2d.png
 
-This figure shows us the Pearson correlation between pairs of features such that each cell in the grid represents two features identified in order on the x and y axes and whose color displays the magnitude of the correlation. A Pearson correlation of 1.0 means that there is a strong positive, linear relationship between the pairs of variables and a value of -1.0 indicates a strong negative, linear relationship (a value of zero indicates no relationship). Therefore we are looking for dark red and dark blue boxes to identify further.
+Bu şekil bize, ızgaradaki her hücrenin x ve y eksenlerinde sırayla tanımlanan ve rengi korelasyonun büyüklüğünü gösteren iki özelliği temsil ettiği özellik çiftleri arasındaki Pearson korelasyonunu gösterir. 1,0'lık bir Pearson korelasyonu, iki özellik arasında güçlü, pozitif ve doğrusal bir ilişki olduğu anlamına gelir.
+n değişken çiftleri ve -1.0 değeri güçlü bir negatif, doğrusal ilişkiyi gösterir (sıfır değeri ilişki olmadığını gösterir). Bu nedenle daha fazla tanımlamak için koyu kırmızı ve koyu mavi kutular arıyoruz.
 
-In this chart we see that features 7 (temperature) and feature 9 (feelslike) have a strong correlation and also that feature 0 (season) has a strong correlation with feature 1 (month). This seems to make sense; the apparent temperature we feel outside depends on the actual temperature and other airquality factors, and the season of the year is described by the month! To dive in deeper, we can use the `JointPlotVisualizer <http://www.scikit-yb.org/en/latest/api/yellowbrick.features.html#module-yellowbrick.features.jointplot>`_ to inspect those relationships.
+Bu grafikte özellik 7'nin (sıcaklık) ve özellik 9'un (hissedilen) güçlü bir korelasyona sahip olduğunu ve ayrıca özellik 0'ın (mevsim) özellik 1 (ay) ile güçlü bir korelasyona sahip olduğunu görüyoruz. Bu mantıklı görünüyor; dışarıda hissettiğimiz görünen sıcaklık gerçek sıcaklığa ve diğer hava kalitesi faktörlerine bağlıdır ve yılın mevsimi ay ile tanımlanır! Daha derinlemesine incelemek için, bu ilişkileri incelemek üzere `JointPlotVisualizer <http://www.scikit-yb.org/en/latest/api/yellowbrick.features.html#module-yellowbrick.features.jointplot>`_ kullanabiliriz.
 
 .. code-block:: python
 
-    from yellowbrick.features import JointPlotVisualizer
+from yellowbrick.features import JointPlotVisualizer
 
-    visualizer = JointPlotVisualizer(feature='temp', target='feelslike')
-    visualizer.fit(X['temp'], X['feelslike'])
-    visualizer.poof()
+visualizer = JointPlotVisualizer(feature='temp', target='feelslike')
+visualizer.fit(X['temp'], X['feelslike'])
+visualizer.poof()
 
 .. image:: images/quickstart/temp_feelslike_jointplot.png
 
-This visualizer plots a scatter diagram of the apparent temperature on the y axis and the actual measured temperature on the x axis and draws a line of best fit using a simple linear regression. Additionally, univariate distributions are shown as histograms above the x axis for temp and next to the y axis for feelslike.  The ``JointPlotVisualizer`` gives an at-a-glance view of the very strong positive correlation of the features, as well as the range and distribution of each feature. Note that the axes are normalized to the space between zero and one, a common technique in machine learning to reduce the impact of one feature over another.
+Bu görselleştirici, y ekseninde görünen sıcaklığın ve x ekseninde ölçülen gerçek sıcaklığın dağılım diyagramını çizer ve basit bir doğrusal regresyon kullanarak en iyi uyumu gösteren bir çizgi çizer. Ek olarak, tek değişkenli dağılımlar, sıcaklık için x ekseninin üstünde ve feellike için y ekseninin yanında histogram olarak gösterilir. ``JointPlotVisualizer``, özelliklerin çok güçlü pozitif korelasyonunun yanı sıra her özelliğin aralığı ve dağılımının genel bir görünümünü sunar. Eksenlerin sıfır ile bir arasındaki boşluğa göre normalleştirildiğini unutmayın; bu, makine öğreniminde bir özelliğin diğerine olan etkisini azaltmak için kullanılan yaygın bir tekniktir.
 
-This plot is very interesting; first there appear to be some outliers in the dataset, where feelslike is approximately equal to 0.25. These instances may need to be manually removed in order to improve the quality of the final model because they could represent data input errors. Secondly, we can see that more extreme temperatures create an exaggerated effect in perceived temperature; the colder it is, the colder people are likely to believe it to be, and the warmer it is, the warmer it appears to be. Moderate temperatures feel like they do. This gives us the intuition that feelslike may be a better feature than temp, and if it is causing problems in our regression analysis, we should probably remove the temp variable in favor of feels like.
+Bu çizim çok ilginç; ilk olarak, veri setinde feellike'ın yaklaşık olarak 0,25'e eşit olduğu bazı aykırı değerler var gibi görünüyor. Bu örneklerin, veri girişi hatalarını temsil edebilecekleri için son modelin kalitesini iyileştirmek amacıyla manuel olarak kaldırılması gerekebilir. İkinci olarak, daha aşırı sıcaklıkların algılanan sıcaklıkta abartılı bir etki yarattığını görebiliriz; ne kadar soğuksa, insanların buna inanma olasılığı o kadar yüksektir ve ne kadar sıcaksa, o kadar sıcak görünür. Orta sıcaklıklar öyle hissettirir. Bu bize feellike'ın temp'den daha iyi bir özellik olabileceği ve regresyon analizimizde sorunlara neden oluyorsa, muhtemelen temp değişkenini feellike lehine kaldırmamız gerektiği sezgisini verir.
 
-At this point, we can train our model; let's fit a linear regression to our model and plot the residuals.
+Bu noktada, modelimizi eğitebiliriz; modelimize doğrusal bir regresyon uygulayalım ve artıkları çizelim.
 
 .. code-block:: python
 
-    from yellowbrick.regressor import ResidualsPlot
-    from sklearn.linear_model import LinearRegression
-    from sklearn.model_selection import train_test_split
+from yellowbrick.regressor import ResidualsPlot
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 
-    # Create training and test sets
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.1
-    )
+# Eğitim ve test setleri oluştur
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size=0.1
+)
 
-    visualizer = ResidualsPlot(LinearRegression())
-    visualizer.fit(X_train, y_train)
-    visualizer.score(X_test, y_test)
-    visualizer.poof()
+visualizer = ResidualsPlot(LinearRegression())
+visualizer.fit(X_train, y_train)
+visualizer.score(X_test, y_test)
+visualizer.poof()
 
 .. image:: images/quickstart/bikeshare_ols_residuals.png
 
-The residuals plot shows the error against the predicted value, and allows us to look for heteroskedasticity in the model; e.g. regions in the target where the error is greatest. The shape of the residuals can strongly inform us where OLS (ordinary least squares) is being most strongly effected by the components of our model (namely the features). In this case, we can see that the lower the predicted value (the lower the number of riders), the lower the error, but the higher the number of predicted riders, the higher the error. This indicates that our model has more noise in certain regions of the target or that two variables are colinear, meaning that they are injecting error as the noise in their relationship changes.
+Artıklık grafiği, hatayı tahmin edilen değere göre gösterir ve modelde heteroskedastisite aramamızı sağlar; örneğin, hedefte hatanın en büyük olduğu bölgeler. Kalıntıların şekli, OLS'nin (sıradan en küçük kareler) modelimizin bileşenlerinden (özelliklerden) en çok nerede etkilendiğini bize güçlü bir şekilde bildirebilir. Bu durumda, tahmin edilen değer ne kadar düşükse (sürücü sayısı ne kadar düşükse), hatanın o kadar düşük olduğunu, ancak tahmin edilen sürücü sayısı ne kadar yüksekse hatanın da o kadar yüksek olduğunu görebiliriz. Bu, modelimizin hedefin belirli bölgelerinde daha fazla gürültüye sahip olduğunu veya iki değişkenin eş doğrusal olduğunu, yani ilişkilerindeki gürültü değiştikçe hata enjekte ettiklerini gösterir.
 
-The residuals plot also shows how the model is injecting error, the bold horizontal line at ``residuals = 0`` is no error, and any point above or below that line indicates the magnitude of error. For example, most of the residuals are negative, and since the score is computed as ``actual - expected``, this means that the expected value is bigger than the actual value most of the time, e.g. that our model is primarily guessing more than the actual number of riders. Moreover, there is a very interesting boundary along the top right of the residuals graph, indicating an interesting affect in model space; possibly that some feature is strongly weighted in the region of that model.
+Kalıntılar grafiği ayrıca modelin hatayı nasıl enjekte ettiğini gösterir, ``residuals = 0`` noktasındaki kalın yatay çizgi hata olmadığını ve bu çizginin üstünde veya altında herhangi bir nokta hatanın büyüklüğünü gösterir. Örneğin, kalıntıların çoğu negatiftir ve puan ``gerçek - beklenen`` olarak hesaplandığından, bu beklenen değerin çoğu zaman gerçek değerden daha büyük olduğu anlamına gelir, örneğin modelimiz öncelikle gerçek sürücü sayısından daha fazlasını tahmin ediyor. Ayrıca, kalıntı grafiğinin sağ üst kısmında, model uzayında ilginç bir etkiyi gösteren çok ilginç bir sınır var; muhtemelen bazı özellikler o modelin bölgesinde güçlü bir şekilde ağırlıklandırılmıştır.
 
-Finally the residuals are colored by training and test set. This helps us identify errors in creating train and test splits. If the test error doesn't match the train error then our model is either overfit or underfit. Otherwise it could be an error in shuffling the dataset before creating the splits.
+Son olarak kalıntılar eğitim ve test kümesine göre renklendirilir. Bu, eğitim ve test bölmeleri oluştururken hataları belirlememize yardımcı olur. Test hatası eğitim hatasıyla uyuşmuyorsa, modelimiz ya aşırı uyum sağlar ya da yetersiz uyum sağlar. Aksi takdirde, bölmeleri oluşturmadan önce veri kümesini karıştırmada bir hata olabilir.
 
-Because our coefficient of determination for this model is 0.328, let's see if we can fit a better model using *regularization*, and explore another visualizer at the same time.
+Bu model için belirleme katsayımız 0,328 olduğundan, *düzenleme* kullanarak daha iyi bir model uydurup uyduramayacağımıza bakalım ve aynı anda başka bir görselleştiriciyi inceleyelim.
 
-.. code-block:: python
+..code-block:: python
 
-    import numpy as np
+import numpy as np
 
-    from sklearn.linear_model import RidgeCV
-    from yellowbrick.regressor import AlphaSelection
+from sklearn.linear_model import RidgeCV
+from yellowbrick.regressor import AlphaSelection
 
-    alphas = np.logspace(-10, 1, 200)
-    visualizer = AlphaSelection(RidgeCV(alphas=alphas))
-    visualizer.fit(X, y)
-    visualizer.poof()
+alphas = np.logspace(-10, 1, 200)
+visualizer = AlphaSelection(RidgeCV(alphas=alphas))
+visualizer.fit(X, y)
+visualizer.poof()
 
 .. image:: images/quickstart/bikeshare_ridge_alphas.png
 
-When exploring model families, the primary thing to consider is how the model becomes more *complex*. As the model increases in complexity, the error due to variance increases because the model is becoming more overfit and cannot generalize to unseen data. However, the simpler the model is the more error there is likely to be due to bias; the model is underfit and therefore misses its target more frequently. The goal therefore of most machine learning is to create a model that is *just complex enough*, finding a middle ground between bias and variance.
+Model ailelerini incelerken, dikkate alınması gereken birincil şey modelin nasıl daha *karmaşık* hale geldiğidir. Model karmaşıklık açısından arttıkça, model daha fazla aşırı uyum sağladığı ve görülmeyen verilere genelleştirilemediği için varyans nedeniyle oluşan hata artar. Ancak, model ne kadar basit olursa, önyargı nedeniyle oluşan hata olasılığı o kadar artar; model yetersiz uyum sağlar ve bu nedenle hedefini daha sık ıskalar. Bu nedenle çoğu makine öğreniminin amacı, önyargı ve varyans arasında bir orta yol bularak *tam olarak yeterince karmaşık* bir model oluşturmaktır.
 
-For a linear model, complexity comes from the features themselves and their assigned weight according to the model. Linear models therefore expect the *least number of features* that achieves an explanatory result. One technique to achieve this is *regularization*, the introduction of a parameter called alpha that normalizes the weights of the coefficients with each other and penalizes complexity. Alpha and complexity have an inverse relationship, the higher the alpha, the lower the complexity of the model and vice versa.
+Doğrusal bir model için karmaşıklık, özelliklerin kendisinden ve modele göre atanan ağırlıklarından gelir. Dolayısıyla doğrusal modeller, açıklayıcı bir sonuca ulaşan *en az sayıda özelliği* bekler. Bunu başarmak için bir teknik, katsayıların ağırlıklarını birbirleriyle normalleştiren ve karmaşıklığı cezalandıran alfa adı verilen bir parametrenin tanıtılması olan *düzenlemedir*. Alfa ve karmaşıklık ters bir ilişkiye sahiptir, alfa ne kadar yüksekse modelin karmaşıklığı o kadar düşüktür ve bunun tersi de geçerlidir.
 
-The question therefore becomes how you choose alpha. One technique is to fit a number of models using cross-validation and selecting the alpha that has the lowest error. The ``AlphaSelection`` visualizer allows you to do just that, with a visual representation that shows the behavior of the regularization. As you can see in the figure above, the error decreases as the value of alpha increases up until our chosen value (in this case, 3.181) where the error starts to increase. This allows us to target the bias/variance trade-off and to explore the relationship of regularization methods (for example Ridge vs. Lasso).
+Bu nedenle soru, alfayı nasıl seçeceğinizdir. Bir teknik, çapraz doğrulama kullanarak bir dizi modeli uydurmak ve en düşük hataya sahip alfayı seçmektir. ``AlphaSelection`` görselleştiricisi, düzenlemenin davranışını gösteren görsel bir gösterimle tam olarak bunu yapmanızı sağlar. Yukarıdaki şekilde görebileceğiniz gibi, alfa değeri arttıkça hata, seçtiğimiz değere (bu durumda 3.181) kadar azalır ve hata artmaya başlar. Bu, önyargı/varyans dengelerini hedeflememizi ve düzenleme yöntemlerinin ilişkisini (örneğin Ridge ve Lasso) keşfetmemizi sağlar.
 
-We can now train our final model and visualize it with the ``PredictionError`` visualizer:
+Artık son modelimizi eğitebilir ve ``PredictionError`` görselleştiricisiyle görselleştirebiliriz:
 
 .. code-block:: python
 
-    from sklearn.linear_model import Ridge
-    from yellowbrick.regressor import PredictionError
+from sklearn.linear_model import Ridge
+from yellowbrick.regressor import PredictionError
 
-    visualizer = PredictionError(Ridge(alpha=3.181))
-    visualizer.fit(X_train, y_train)
-    visualizer.score(X_test, y_test)
-    visualizer.poof()
+visualizer = PredictionError(Ridge(alpha=3.181))
+visualizer.fit(X_train, y_train)
+visualizer.score(X_test, y_test)
+visualizer.poof()
 
 .. image:: images/quickstart/bikeshare_ridge_prediction_error.png
 
+Tahmin hatası görselleştiricisi gerçek (ölçülen) ile beklenen (tahmin edilen) değerleri birbirine göre çizer. Noktalı siyah çizgi sıfır hatayı gösteren 45 derecelik çizgidir. Artıklar grafiği gibi bu da hatanın nerede ve hangi büyüklükte meydana geldiğini görmemizi sağlar.
 
-The prediction error visualizer plots the actual (measured) vs. expected (predicted) values against each other. The dotted black line is the 45 degree line that indicates zero error. Like the residuals plot, this allows us to see where error is occurring and in what magnitude.
+Bu grafikte, örnek yoğunluğunun çoğunun 200'den az sürücü olduğunu görebiliriz. Daha fazla bölgeselliği hesaba katan bir regresyona uyması için ortogonal eşleştirme takibi veya eğrileri denemek isteyebiliriz. Ayrıca, kalıntı grafiğindeki o tuhaf topolojinin Ridge regresyonu kullanılarak düzeltilmiş gibi göründüğünü ve modelimizde büyük ve küçük değerler arasında biraz daha fazla denge olduğunu da not edebiliriz. Potansiyel olarak Ridge düzenlemesi, iki özellik arasında yaşadığımız bir kovaryans sorununu çözdü. Diğer model formlarını kullanarak analizimizde ilerledikçe, sonuçlarımızı hızla karşılaştırmak ve görmek için görselleştiricileri kullanmaya devam edebiliriz.
 
-In this plot we can see that most of the instance density is less than 200 riders. We may want to try orthogonal matching pursuit or splines to fit a regression that takes into account more regionality. We can also note that that weird topology from the residuals plot seems to be fixed using the Ridge regression, and that there is a bit more balance in our model between large and small values. Potentially the Ridge regularization cured a covariance issue we had between two features. As we move forward in our analysis using other model forms, we can continue to utilize visualizers to quickly compare and see our results.
-
-Hopefully this workflow gives you an idea of how to integrate Visualizers into machine learning with Scikit-Learn and inspires you to use them in your work and write your own! For additional information on getting started with Yellowbrick, check out the :doc:`tutorial`. After that you can get up to speed on specific visualizers detailed in the :doc:`api/index`.
+Umarım bu iş akışı, Görselleştiricileri Scikit-Learn ile makine öğrenimine nasıl entegre edeceğiniz konusunda size bir fikir verir ve bunları işinizde kullanmanız ve kendi çalışmanızı yazmanız için size ilham verir! Yellowbrick ile çalışmaya başlama hakkında ek bilgi için :doc:`tutorial`'a bakın. Bundan sonra :doc:`api/index`'te ayrıntılı olarak açıklanan belirli görselleştiriciler hakkında hızla bilgi edinebilirsiniz.
